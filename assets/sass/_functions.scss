@@ -1,0 +1,13 @@
+// GLOBAL FUNCTIONS
+// --------------------------------------------------
+
+// Raw Units
+// Removes the unit from the value
+
+@function raw-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($px) {
+	@return raw-unit($px) * 0.1rem;
+}

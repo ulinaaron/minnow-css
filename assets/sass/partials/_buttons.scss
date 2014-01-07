@@ -1,0 +1,62 @@
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER!!!
+// -------------------------
+
+// MIXINS
+// --------------------------------------------------
+
+@mixin button() {
+	@include rem('padding', 10px 20px);
+	display: inline-block;
+	white-space: nowrap;
+
+	text-decoration: none;
+
+	background-color: $color-medium;
+	color: lighten($color-medium, 30);
+}
+
+// STYLES
+// --------------------------------------------------
+
+.#{$ui-prefix}button {
+	@include button();
+
+	// Button Variations
+
+	&.primary {
+		background-color: $color-primary;
+		color: lighten($color-primary, 30);
+	}
+
+	&.secondary {
+		background-color: $color-secondary;
+		color: lighten($color-secondary, 30);
+	}
+
+	&.tertiary {
+		background-color: $color-tertiary;
+		color: lighten($color-tertiary, 30);
+	}
+
+	&.success {
+		background-color: $color-success;
+		color: lighten($color-success, 30);
+	}
+
+	&.warning {
+		background-color: $color-warning;
+		color: lighten($color-warning, 30);
+	}
+
+	&.alert {
+		background-color: $color-alert;
+		color: lighten($color-alert, 30);
+	}
+
+	&.info {
+		background-color: $color-info;
+		color: lighten($color-info, 30);
+	}
+}
