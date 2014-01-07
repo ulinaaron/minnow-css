@@ -1,0 +1,149 @@
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER!!!
+// --------------------------------------------------
+
+$ui-prefix:         "mw-" !default;
+
+// THEME COLORS
+// -------------------------
+
+$color-primary: 		#8fa1b3 !default;
+$color-secondary: 	#b48ead !default;
+$color-tertiary: 		#ab7967 !default;
+
+$color-success: 		#a3be8c !default;
+$color-warning: 		#d08770 !default;
+$color-alert: 			#bf616a !default;
+$color-info: 			  #96b5b4 !default;
+
+$color-light: 			#c0c5ce !default;
+$color-lighter: 		#dfe1e8 !default;
+$color-lightest: 		#eff1f5 !default;
+$color-medium: 			#65737e !default;
+$color-dark: 			  #4f5b66 !default;
+$color-darker: 			#343d46 !default;
+$color-darkest: 		#2b303b !default;
+
+// BASE
+// -------------------------
+
+$base-font-precent: 62.5% !default;
+$base-line-height: 	150% !default;
+$base-rem:          16px !default;
+$base-font-size: 		$base-rem !default;
+$base-font-family: 	sans-serif !default;
+$base-font-color: 	$color-darker !default;
+$base-fallback-px:  true !default;
+
+
+// MIXINS
+// --------------------------------------------------
+
+// Group
+//
+// This is used to clear floats. 
+// Commonly known as a clearfix.
+
+@mixin group {
+  *zoom:1;
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+
+// Box Sizing
+//
+// Used to properly control widths of elements
+
+@mixin box-sizing($type: border-box) {
+  box-sizing: $type;
+}
+
+// Rem Property Mixin
+//
+// Creates properties with a rem value using a pixel value input.
+// You can selectively choose to include a property fallback with a pixel value.
+// The fallback inclusion can be globaly set via the $base-fallback-px variable.
+
+@mixin rem($property, $px, $fallback: $base-fallback-px) {
+
+  // If fallback is true
+  //
+  // Does not require a list if multiple units
+
+  @if $fallback == true {
+    #{$property}: $px;
+  }
+  
+  // If only one numeric pixel value
+
+  @if type-of($px) == "number" {
+    #{$property}: rem($px);
+  }
+
+  // If there is multiple pixel values
+  @else {
+
+    // Empty list for multiple $px values
+    $px-values: ();
+
+    @each $value in $px {
+
+      @if $value == 0 or type-of( $value ) != "number" {
+        $px-values: append($px-values, $value); 
+      }
+
+      @else {
+        $px-values: append($px-values, rem($value)); 
+      }
+
+      #{$property}: $px-values; 
+
+    }
+
+  }
+  
+}
+
+// STYLES
+// --------------------------------------------------
+
+// Group / Clearfix
+
+.group {
+	@include group;
+}
+
+// Global Box Sizing
+
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+html {
+    font-size: $base-font-precent; /* 1 */
+    -ms-text-size-adjust: $base-font-precent; /* 2 */
+    -webkit-text-size-adjust: $base-font-precent; /* 3 */
+}
+
+body {
+	background-color: $color-lightest;
+	font-family: $base-font-family;
+  @include rem('font-size', $base-font-size);
+	color: $color-medium;
+  line-height: $base-line-height;
+}
+
+// IMAGES
+// -------------------------
+
+img, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
