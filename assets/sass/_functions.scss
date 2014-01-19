@@ -2,12 +2,18 @@
 // --------------------------------------------------
 
 // Raw Units
+//
 // Removes the unit from the value
 
 @function raw-unit($value) {
   @return $value / ($value * 0 + 1);
 }
 
+// Rem Calculator
+//
+// Takes a pixel value and strips the units and multiples it by rems.
+
 @function rem($px) {
-	@return raw-unit($px) * 0.1rem;
+	$value-divide: raw-unit($px) / raw-unit($base-rem); 
+	@return #{$value-divide}rem;
 }

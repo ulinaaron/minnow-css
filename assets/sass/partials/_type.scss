@@ -1,6 +1,26 @@
 // TYPOGRAPHY
 // --------------------------------------------------
 
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER
+// --------------------------------------------------
+
+$font-size-tiny: 	10 !default;
+$font-size-small: 	12 !default;
+$font-size-medium: 	16 !default;
+$font-size-large: 	24 !default;
+$font-size-xl: 		32 !default;
+$font-size-xxl: 	48 !default;
+$font-size-xxxl: 	64 !default;
+$font-size-huge: 	96 !default;
+
+// STYLE
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+
 h1,
 h2,
 h3,
@@ -10,6 +30,11 @@ h6 {
 	display: block;
 }
 
+h1 {
+	@include rem('font-size', $font-size-xxl);
+}
+
 p {
+	@include rem('font-size', $base-font-size);
 	margin-bottom: 20px;
 }

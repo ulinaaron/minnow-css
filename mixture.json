@@ -20,7 +20,7 @@
     "domain": null,
     "convertHtmlOutput": null,
     "convertHtmlExtension": ".html",
-    "followLeader": true,
+    "followLeader": false,
     "routes": null,
     "customRuby": false,
     "customRubyPath": null,
@@ -31,11 +31,21 @@
     "ignoreDir": "ignore",
     "customTodos": null,
     "ftpSettings": null,
-    "autoPrefixer": null,
-    "sass": null,
+    "sass": {
+        "outputStyle": "nested"
+    },
     "sitemap": false,
     "gitHubPages": {
         "repoUrl": "https://github.com/ulinaaron/minnow-css.git",
         "guid": "69016526-21b5-46a0-9506-a3edcf1ea68a"
+    },
+    "autoPrefixer": {
+        "active": true,
+        "browsers": [
+            "last 1 version",
+            "> 1%",
+            "ie 8",
+            "ie 7"
+        ]
     }
 }

@@ -1,3 +1,6 @@
+// * BASE *
+// --------------------------------------------------
+
 // DEFAULT VARIABLES
 //
 // DO NOT ALTER!!!
@@ -29,13 +32,22 @@ $color-darkest: 		#2b303b !default;
 // -------------------------
 
 $base-font-precent: 62.5% !default;
-$base-line-height: 	150% !default;
-$base-rem:          16px !default;
-$base-font-size: 		$base-rem !default;
+$base-line-height: 	1.5 !default;
+$base-rem:          10px !default;
+$base-font-size: 		16px !default;
 $base-font-family: 	sans-serif !default;
 $base-font-color: 	$color-darker !default;
 $base-fallback-px:  true !default;
 
+$base-radius: 6px !default;
+$base-oval: 9999px !default;
+
+// LINKS
+// -------------------------
+
+$link-color: $color-primary !default;
+$link-color-hover: darken($color-primary, 20) !default;
+$link-transitions: true !default;
 
 // MIXINS
 // --------------------------------------------------
@@ -82,6 +94,7 @@ $base-fallback-px:  true !default;
   }
 
   // If there is multiple pixel values
+
   @else {
 
     // Empty list for multiple $px values
@@ -97,9 +110,11 @@ $base-fallback-px:  true !default;
         $px-values: append($px-values, rem($value)); 
       }
 
-      #{$property}: $px-values; 
-
     }
+
+    // Results from @each $value in $px
+
+    #{$property}: $px-values; 
 
   }
   
@@ -123,18 +138,32 @@ $base-fallback-px:  true !default;
 }
 
 html {
-    font-size: $base-font-precent; /* 1 */
-    -ms-text-size-adjust: $base-font-precent; /* 2 */
-    -webkit-text-size-adjust: $base-font-precent; /* 3 */
+    font-size: $base-font-precent;
 }
 
 body {
 	background-color: $color-lightest;
 	font-family: $base-font-family;
-  @include rem('font-size', $base-font-size);
 	color: $color-medium;
   line-height: $base-line-height;
 }
+
+
+// Links
+// -------------------------
+
+a {
+  color: $link-color;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+  }
+
+  @if $link-transitions == true {
+    transition:all .2s linear;
+  }
+}
+
 
 // IMAGES
 // -------------------------
