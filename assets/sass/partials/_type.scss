@@ -6,19 +6,30 @@
 // DO NOT ALTER
 // --------------------------------------------------
 
-$font-size-tiny: 	10 !default;
-$font-size-small: 	12 !default;
-$font-size-medium: 	16 !default;
-$font-size-large: 	24 !default;
-$font-size-xl: 		32 !default;
-$font-size-xxl: 	48 !default;
-$font-size-xxxl: 	64 !default;
-$font-size-huge: 	96 !default;
+// FONT SIZES
+// -------------------------
+
+$font-size-micro: 	10px !default;
+$font-size-tiny: 	12px !default;
+$font-size-small: 	14px !default;
+$font-size-medium: 	$base-font-size !default;
+$font-size-large: 	18px !default;
+$font-size-xl: 		20px !default;
+$font-size-xxl: 	22px !default;
+$font-size-xxxl: 	30px !default;
+$font-size-huge: 	36px !default;
+
+// HEADINGS
+// -------------------------
+
+$heading-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
+$heading-color: $color-dark !default;
+
 
 // STYLE
 // --------------------------------------------------
 
-// Headings
+// HEADINGS
 // -------------------------
 
 h1,
@@ -28,13 +39,38 @@ h4,
 h5,
 h6 {
 	display: block;
+	color: $heading-color;
+	font-family: $heading-family; 
 }
 
 h1 {
+	@include rem('font-size', $font-size-huge);
+}
+
+h2 {
+	@include rem('font-size', $font-size-xxxl);
+}
+
+h3 {
 	@include rem('font-size', $font-size-xxl);
 }
 
+h4 {
+	@include rem('font-size', $font-size-xl);
+}
+
+h5 {
+	@include rem('font-size', $font-size-large);
+}
+
+h6 {
+	@include rem('font-size', $font-size-medium);
+}
+
+// OTHER
+// -------------------------
+
 p {
 	@include rem('font-size', $base-font-size);
-	margin-bottom: 20px;
+	@include rem('margin-bottom', 16px );
 }
