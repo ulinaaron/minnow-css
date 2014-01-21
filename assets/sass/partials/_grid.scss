@@ -65,7 +65,11 @@ $grid-name-small: "small" !default;
 
 .#{$ui-prefix}#{$grid-prefix-wrapper} {
 	margin: 0 auto;
-	width: $grid-wrapper-width;
+	width: rem($grid-wrapper-width);
+
+	@media #{$medium-down} {
+		width: 100%;
+	}
 }
 
 
@@ -100,4 +104,13 @@ $grid-name-small: "small" !default;
   .#{$grid-name-large}-#{$i} { 
   	width: column-calc($i); 
   }
+}
+
+// Small Grid
+@media #{$small-only} {
+	@for $i from 1 through $grid-column-amount {
+	  .#{$grid-name-small}-#{$i} { 
+	  	width: column-calc($i); 
+	  }
+	}
 }

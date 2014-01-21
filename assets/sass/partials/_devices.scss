@@ -6,9 +6,18 @@
 // DO NOT ALTER!!!
 // --------------------------------------------------
 
-$device-micro:	240 !default;
-$device-tiny:	320 !default;
-$device-small:	480 !default;
-$device-medium:	768 !default;
-$device-large:	1024 !default;
-$device-xl:		1280 !default;
+$device-micro:	240px !default;
+$device-tiny:	320px !default;
+$device-small:	480px !default;
+$device-medium:	768px !default;
+$device-large:	1024px !default;
+$device-xl:		1280px !default;
+
+$screen: "only screen" !default;
+
+$small-up: "#{$screen} and (min-width: #{query-down($device-small)})" !default;
+$small-only: "#{$screen} and (max-width: #{query-down($device-medium)})" !default;
+
+$medium-up: "#{$screen} and (min-width: #{query-down($device-medium)})" !default;
+$medium-down: "#{$screen} and (max-width: #{$device-medium})" !default;
+$medium-only: "#{$screen} and (min-width: #{$device-medium}) and (max-width: #{query-down($device-large)})" !default;

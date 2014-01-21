@@ -31,13 +31,14 @@ $color-darkest: 		#2b303b !default;
 // BASE
 // -------------------------
 
-$base-font-precent: 62.5% !default;
+$base-font-precent: 100% !default;
 $base-line-height: 	1.5 !default;
-$base-rem:          10px !default;
+$base-rem:          16px !default;
 $base-font-size: 		16px !default;
-$base-font-family: 	sans-serif !default;
+$base-font-family: 	Arial, Helvetica, sans-serif !default;
 $base-font-color: 	$color-darker !default;
 $base-fallback-px:  true !default;
+$base-background-color: $color-lightest !default;
 
 $base-radius: 6px !default;
 $base-oval: 9999px !default;
@@ -48,6 +49,7 @@ $base-oval: 9999px !default;
 $link-color: $color-primary !default;
 $link-color-hover: darken($color-primary, 20) !default;
 $link-transitions: true !default;
+
 
 // MIXINS
 // --------------------------------------------------
@@ -120,13 +122,25 @@ $link-transitions: true !default;
   
 }
 
+
 // STYLES
 // --------------------------------------------------
+
+html {
+    font-size: $base-font-precent;
+}
+
+body {
+	background-color: $base-background-color;
+	font-family: $base-font-family;
+	color: $color-medium;
+  line-height: $base-line-height;
+}
 
 // Group / Clearfix
 
 .group {
-	@include group;
+  @include group;
 }
 
 // Global Box Sizing
@@ -134,18 +148,29 @@ $link-transitions: true !default;
 *,
 *:before,
 *:after {
-	@include box-sizing(border-box);
+  @include box-sizing(border-box);
 }
 
-html {
-    font-size: $base-font-precent;
-}
+// ALIGNMENTS
+// -------------------------
 
-body {
-	background-color: $color-lightest;
-	font-family: $base-font-family;
-	color: $color-medium;
-  line-height: $base-line-height;
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-justify {
+  text-align: justify;
 }
 
 
@@ -154,9 +179,12 @@ body {
 
 a {
   color: $link-color;
+  text-decoration: none;
+  outline: none;
 
   &:hover, &:focus {
     color: $link-color-hover;
+    text-decoration: underline;
   }
 
   @if $link-transitions == true {

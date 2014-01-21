@@ -1,7 +1,6 @@
 // * BUTTONS *
 // --------------------------------------------------
 
-
 // DEFAULT VARIABLES
 //
 // DO NOT ALTER!!!
@@ -11,7 +10,8 @@
 // --------------------------------------------------
 
 @mixin button($border-radius: true) {
-	@include rem('padding', 15px 25px);
+	@include rem('padding', 10px 25px);
+	@include rem('margin-bottom', 16px );
 	display: inline-block;
 	white-space: nowrap;
 

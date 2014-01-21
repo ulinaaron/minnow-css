@@ -1,18 +1,18 @@
 // IMPORT PARTIALS
 // --------------------------------------------------
 
+// BASE
+//
+// This is where all the core element styles take place.
+
+@import "partials/base";
+
 // DEVICES
 // 
 // Instead of labeling device types and media queries,
 // Minnow uses a clear size based system.
 
 @import "partials/devices";
-
-// BASE
-//
-// This is where all the core element styles take place.
-
-@import "partials/base";
 
 // TYPOGRAPHY
 //
