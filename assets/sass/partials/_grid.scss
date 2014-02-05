@@ -103,19 +103,12 @@ $grid-name-small: "small" !default;
 	padding: 0 1.5%;
 }
 
-.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-large}-"],
-.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-small}-"] {
-	// Collapse Padding
-
-	&.collpase {
-		padding: 0;
-	}
-
-	&.collapse-left {
+.#{$ui-prefix}.#{$grid-prefix-row}.gutterless [class *= "#{$grid-name-large}-"],
+.#{$ui-prefix}.#{$grid-prefix-row}.gutterless [class *= "#{$grid-name-small}-"] {
+	&:first-child {
 		padding-left: 0;
 	}
-
-	&.collapse-right {
+	&:last-child {
 		padding-right: 0;
 	}
 }

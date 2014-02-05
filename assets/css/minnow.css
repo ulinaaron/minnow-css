@@ -258,8 +258,6 @@ code {
 code, kbd, pre, samp {
   font-size: 14px;
   font-size: 0.875rem;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
   font-family: monospace, serif; }
 
 /* line 171, partials/type */
@@ -269,39 +267,84 @@ ul, ol {
   padding: 0 0 0 40px;
   padding: 0 0 0 2.5rem; }
 
-/* line 176, partials/type */
+/* line 177, partials/type */
 ul ul, ol ol {
   margin: 0; }
 
-/* line 180, partials/type */
+/* line 181, partials/type */
 ul {
   list-style-position: outside;
   list-style-type: disc; }
-  /* line 183, partials/type */
+  /* line 184, partials/type */
   ul ul {
     list-style-type: circle; }
 
-/* line 188, partials/type */
+/* line 189, partials/type */
 ol {
   list-style-position: outside;
   list-style-type: decimal; }
-  /* line 191, partials/type */
+  /* line 192, partials/type */
   ol ol {
     list-style-type: lower-roman; }
 
-/* line 198, partials/type */
+/* line 199, partials/type */
 ul.plain, ol.plain {
   padding: 0;
   list-style-type: none; }
 
-/* line 205, partials/type */
+/* line 206, partials/type */
 ul.inline, ol.inline {
   padding: 0; }
-  /* line 207, partials/type */
+  /* line 208, partials/type */
   ul.inline li, ol.inline li {
     display: inline-block;
     margin: 0 10px 0 0;
     margin: 0 0.625rem 0 0; }
+
+/* line 216, partials/type */
+dl {
+  margin: 16px 0;
+  margin: 1rem 0; }
+
+/* line 220, partials/type */
+dt {
+  font-weight: bold; }
+
+/* line 224, partials/type */
+dd {
+  margin: 9.88875px 0;
+  margin: 0.61805rem 0; }
+
+/* line 14, partials/tables */
+.mw.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #c0c5ce;
+  margin: 9.88875px 0;
+  margin: 0.61805rem 0; }
+  /* line 21, partials/tables */
+  .mw.table.fluid {
+    width: 100%; }
+
+/* line 26, partials/tables */
+.mw.table thead {
+  background: #eff1f5;
+  text-align: left; }
+
+/* line 31, partials/tables */
+.mw.table td, .mw.table th {
+  font-size: inherit;
+  margin: 0;
+  padding: 6px 12px; }
+
+/* line 37, partials/tables */
+.mw.table th {
+  font-weight: bold; }
+
+/* line 41, partials/tables */
+.mw.table td {
+  border-bottom: 1px solid #dfe1e8; }
 
 /* line 60, partials/grid */
 .mw.wrapper {
@@ -338,99 +381,96 @@ ul.inline, ol.inline {
   float: left;
   padding: 0 1.5%; }
 
-/* line 89, partials/grid */
-.mw.row [class*="large-"].collpase, .mw.row [class*="small-"].collpase {
-  padding: 0; }
-/* line 93, partials/grid */
-.mw.row [class*="large-"].collapse-left, .mw.row [class*="small-"].collapse-left {
+/* line 87, partials/grid */
+.mw.row.gutterless [class*="large-"]:first-child, .mw.row.gutterless [class*="small-"]:first-child {
   padding-left: 0; }
-/* line 97, partials/grid */
-.mw.row [class*="large-"].collapse-right, .mw.row [class*="small-"].collapse-right {
+/* line 90, partials/grid */
+.mw.row.gutterless [class*="large-"]:last-child, .mw.row.gutterless [class*="small-"]:last-child {
   padding-right: 0; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-1 {
   width: 8.33333%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-2 {
   width: 16.66667%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-3 {
   width: 25%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-4 {
   width: 33.33333%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-5 {
   width: 41.66667%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-6 {
   width: 50%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-7 {
   width: 58.33333%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-8 {
   width: 66.66667%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-9 {
   width: 75%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-10 {
   width: 83.33333%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-11 {
   width: 91.66667%; }
 
-/* line 105, partials/grid */
+/* line 98, partials/grid */
 .large-12 {
   width: 100%; }
 
 @media only screen and (max-width: 47.9375rem) {
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-1 {
     width: 8.33333%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-2 {
     width: 16.66667%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-3 {
     width: 25%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-4 {
     width: 33.33333%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-5 {
     width: 41.66667%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-6 {
     width: 50%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-7 {
     width: 58.33333%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-8 {
     width: 66.66667%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-9 {
     width: 75%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-10 {
     width: 83.33333%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-11 {
     width: 91.66667%; }
-  /* line 113, partials/grid */
+  /* line 106, partials/grid */
   .small-12 {
     width: 100%; } }
 

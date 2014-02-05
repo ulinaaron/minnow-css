@@ -7,7 +7,7 @@
 		<h1>Minnow CSS</h1>
 		<p class="subheader font-size xxl">Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (<em>and then some</em>) created for them. Instead you will be given a solid foundation you carry with you from project to project.</p>
 
-		<div class="mw row">
+		<div class="mw row gutterless">
 			<div class="large-6 small-12 collapse-left">
 				<h4>A Responsive Grid</h4>
 				<p>Included is a simple grid that scales for large and small devices. You can use the grid for fluid or fixed-width layouts.</p>
@@ -17,7 +17,7 @@
 				<p>Grid columns, font sizes, padding, margins all use rem units as the standard. Pixel fallbacks are included by default but can easily be disabled.</p>
 			</div>
 		</div>
-		<div class="mw row">
+		<div class="mw row gutterless">
 			<div class="large-6 small-12 collapse-left">
 				<h4>Built with Sass</h4>
 				<p>Minnow is assembled with the beautifully powerful <a href="http://sass-lang.com/">SCSS syntax.</a></p>
@@ -102,6 +102,23 @@
 			</div>
 		</div>
 
+		<div class="mw row">
+			<div class="large-6 small-12">
+				<h4>Definition List</h4>
+				<dl>
+					<dt>Definition Term</dt>
+					<dd>Definition Description</dd>
+					<dt>Definition Term</dt>
+					<dd>Definition Description</dd>
+					<dt>Definition Term</dt>
+					<dd>Definition Description</dd>
+				</dl>
+			</div>
+			<div class="large-6 small-12">
+				
+			</div>
+		</div>
+
 		<h4>Buttons</h4>
 
 		<a href="#" class="mw button">Click Here</a>
@@ -127,7 +144,7 @@
 		<h4>Segments</h4>
 		<p>These are seperations of content, commonly referred to as panels.</p>
 
-		<table class="uk-table">
+		<table class="mw table fluid">
 	        <thead>
 	            <tr>
 	                <th>Class</th>
@@ -137,7 +154,7 @@
 	        <tbody>
 	            <tr>
 	                <td><code>.mw.segment</code></td>
-	                <td>Add this class to a <code>&lt;div&gt;</code> element to define the Panel component.</td>
+	                <td>Add this class to a <code>&lt;div&gt;</code> element to define the segment component.</td>
 	            </tr>
 	        </tbody>
     	</table>
@@ -155,6 +172,27 @@
 <div class="mw row">
 	<div class="large-12">
 		<h4>Grid</h4>
+
+		<p>The Minnow grid is small yet highly powerful. It is responsive and can be used in full-width fluid layouts. If you would like to have a fixed-width container you can use the <code>.mw.wrapper</code> classes.</p> Columns can also be nested but the inner-gutters will not be cleared automatically.
+
+		<table class="mw table fluid">
+	        <thead>
+	            <tr>
+	                <th>Class</th>
+	                <th>Description</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td><code>.mw.row</code></td>
+	                <td>Add this class to a <code>&lt;div&gt;</code> element to define the row. Necessary for all columns.</td>
+	            </tr>
+	            <tr>
+	                <td><code>.mw.row.gutterless</code></td>
+	                <td>Clears the left and right padding on the first and last columns.</td>
+	            </tr>
+	        </tbody>
+    	</table>
 	</div>
 </div>
 <div class="demo-grid">

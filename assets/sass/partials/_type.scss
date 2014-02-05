@@ -160,7 +160,7 @@ kbd,
 pre,
 samp {
     @include rem('font-size', ms($font-size-small));
-    @include rem('margin-bottom', ms($base-font-size));
+
     font-family: monospace, serif;
 }
 
@@ -168,7 +168,8 @@ samp {
 // -------------------------
 
 ul,
-ol {
+ol
+{
 	@include rem('margin', ms($base-font-size) 0);
 	@include rem('padding', 0 0 0 40px);
 }
@@ -208,4 +209,18 @@ ul.inline, ol.inline {
 		display: inline-block;
 		@include rem('margin', 0 10px 0 0);
 	}
+}
+
+// Definition list-style-type: 
+
+dl {
+	@include rem('margin', ms($base-font-size) 0);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	@include rem('margin', ms($base-font-size, -1) 0);
 }
