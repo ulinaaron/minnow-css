@@ -14,9 +14,11 @@ $grid-prefix-row: 		"row" !default;
 $grid-prefix-column: 	"column" !default;
 $grid-prefix-wrapper: 	"wrapper" !default;
 
-$grid-wrapper-width:    960px !default;
+$grid-wrapper-width:    980px !default;
+$grid-wrapper-gutter:   20px !default;
+$grid-wrapper-background: transparent !default;
 $grid-column-amount: 	12 !default;
-$grid-column-gutter: 	20px !default;
+$grid-column-gutter: 	10px !default;
 
 // Grid Type Names
 //
@@ -63,11 +65,13 @@ $grid-name-small: "small" !default;
 // Used for fixed-width layouts
 // Without using a wrapper the grid will default to full-width
 
-.#{$ui-prefix}#{$grid-prefix-wrapper} {
+.#{$ui-prefix}.#{$grid-prefix-wrapper} {
+	@include rem('padding', 0 $grid-wrapper-gutter); 
 	margin: 0 auto;
 	width: rem($grid-wrapper-width);
+	background-color: $grid-wrapper-background;
 
-	@media #{$medium-down} {
+	@media #{$large-down} {
 		width: 100%;
 	}
 }
@@ -76,7 +80,7 @@ $grid-name-small: "small" !default;
 // Grid Row
 // -------------------------
 
-.#{$ui-prefix}#{$grid-prefix-row} {
+.#{$ui-prefix}.#{$grid-prefix-row} {
 	@include row;
 
 	// Nested Row
@@ -93,24 +97,42 @@ $grid-name-small: "small" !default;
 //
 // This is used to set the proper floats for all columns.
 
-.#{$ui-prefix}#{$grid-prefix-row} [class *= "#{$grid-name-large}-"],
-.#{$ui-prefix}#{$grid-prefix-row} [class *= "#{$grid-name-small}-"] {
+.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-large}-"],
+.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-small}-"] {
 	float: left;
+	padding: 0 1.5%;
+}
+
+.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-large}-"],
+.#{$ui-prefix}.#{$grid-prefix-row} [class *= "#{$grid-name-small}-"] {
+	// Collapse Padding
+
+	&.collpase {
+		padding: 0;
+	}
+
+	&.collapse-left {
+		padding-left: 0;
+	}
+
+	&.collapse-right {
+		padding-right: 0;
+	}
 }
 
 // Large Grid
 
 @for $i from 1 through $grid-column-amount {
   .#{$grid-name-large}-#{$i} { 
-  	width: column-calc($i); 
+  	width: column-calc($i);
   }
 }
 
 // Small Grid
-@media #{$small-only} {
+@media #{$small-down} {
 	@for $i from 1 through $grid-column-amount {
 	  .#{$grid-name-small}-#{$i} { 
-	  	width: column-calc($i); 
+	  	width: column-calc($i);
 	  }
 	}
 }

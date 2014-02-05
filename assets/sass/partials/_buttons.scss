@@ -6,65 +6,113 @@
 // DO NOT ALTER!!!
 // -------------------------
 
+$button-base-size: $base-font-size !default;
+
+$button-font-weight: bold !default;
+$button-background-color: $color-medium !default;
+$button-color: $color-lightest !default;
+
+$button-font-size-micro: 	ms(10px) !default;
+$button-font-size-tiny: 	ms(12px) !default;
+$button-font-size-small: 	ms(14px) !default;
+$button-font-size-medium: 	ms(14px)  !default;
+$button-font-size-large: 	ms(18px) !default;
+$button-font-size-xl: 		ms(20px) !default;
+$button-font-size-xxl: 		ms(22px) !default;
+$button-font-size-xxxl: 	ms(26px) !default;
+$button-font-size-huge: 	ms(32px) !default;
+
 // MIXINS
 // --------------------------------------------------
 
 @mixin button($border-radius: true) {
-	@include rem('padding', 10px 25px);
-	@include rem('margin-bottom', 16px );
-	display: inline-block;
-	white-space: nowrap;
-
-	text-decoration: none;
-
-	background-color: $color-medium;
-	color: lighten($color-medium, 30);
-
-	@if $border-radius == true {
-		border-radius: $base-oval;
+		@if $border-radius == true {
+		border-radius: $base-radius;
 	}
+}
+
+@mixin button-style($bg: $button-background-color, $color: $button-color ) {
+	background-color: $bg;
+	color: $color;
 }
 
 // STYLES
 // --------------------------------------------------
 
-.#{$ui-prefix}button {
-	@include button();
+// Colors
+// -------------------------
+
+.#{$ui-prefix}.button {
+	@include button($border-radius: false);
+
+	@include rem('padding', ms($button-base-size, -1) ms($button-base-size, 1));
+	@include rem('margin-bottom', ms($button-base-size, -1));
+	display: inline-block;
+	white-space: nowrap;
+
+	text-decoration: none;
+	font-weight: $button-font-weight;
+
+	@include button-style();
+
+	&:hover {
+		text-decoration: none;
+	}
 
 	// Button Variations
 
-	&.primary {
-		background-color: $color-primary;
-		color: lighten($color-primary, 30);
-	}
+	&.primary 	{ @include button-style($color-primary); }
+	&.secondary { @include button-style($color-secondary); }
+	&.tertiary  { @include button-style($color-tertiary); }
+}
 
-	&.secondary {
-		background-color: $color-secondary;
-		color: lighten($color-secondary, 30);
-	}
+// Size
+// -------------------------
 
-	&.tertiary {
-		background-color: $color-tertiary;
-		color: lighten($color-tertiary, 30);
-	}
+// Fluid
+//
+// Stretches to fit the container
 
-	&.success {
-		background-color: $color-success;
-		color: lighten($color-success, 30);
-	}
+.#{$ui-prefix}.button.fluid {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
 
-	&.warning {
-		background-color: $color-warning;
-		color: lighten($color-warning, 30);
+.#{$ui-prefix}.button {
+	&.micro  { 
+		@include rem('font-size', $button-font-size-micro);
 	}
-
-	&.alert {
-		background-color: $color-alert;
-		color: lighten($color-alert, 30);
+	&.tiny 	 { 
+		@include rem('font-size', $button-font-size-tiny);
+		font-size: $button-font-size-tiny; 
 	}
-
-	&.info {
-		background-color: $color-info;
-		color: lighten($color-info, 30);
+	&.small  { 
+		@include rem('font-size', $button-font-size-small);
+		font-size: $button-font-size-small; 
+	}
+	&.medium { 
+		@include rem('font-size', $button-font-size-medium);
+		font-size: $button-font-size-medium; 
+	}
+	&.large  { 
+		@include rem('font-size', $button-font-size-large);
+		font-size: $button-font-size-large; 
+	}
+	&.xl 	 { 
+		@include rem('font-size', $button-font-size-xl);
+		font-size: $button-font-size-xl; 
+	}
+	&.xxl 	 { 
+		@include rem('font-size', $button-font-size-xxl);
+		font-size: $button-font-size-xxl; 
+	}
+	&.xxxl 	 { 
+		@include rem('font-size', $button-font-size-xxxl);
+		font-size: $button-font-size-xxxl; 
+	}
+	&.huge 	 { 
+		@include rem('font-size', $button-font-size-huge);
+		font-size: $button-font-size-huge; 
 	}
 }

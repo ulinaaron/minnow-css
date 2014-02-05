@@ -6,18 +6,35 @@
 // DO NOT ALTER!!!
 // --------------------------------------------------
 
-$device-micro:	240px !default;
-$device-tiny:	320px !default;
-$device-small:	480px !default;
-$device-medium:	768px !default;
-$device-large:	1024px !default;
-$device-xl:		1280px !default;
+$device-base-size: $base-font-size !default;
+
+$device-micro:	240px !default; 	// 240px
+$device-tiny:	320px !default; 	// 320px
+$device-small:	480px !default; 	// 480px
+$device-medium:	768px !default; 	// 768px
+$device-large:	1024px !default;	// 1024px
+$device-xl:		1280px !default;	// 1280px
 
 $screen: "only screen" !default;
 
-$small-up: "#{$screen} and (min-width: #{query-down($device-small)})" !default;
-$small-only: "#{$screen} and (max-width: #{query-down($device-medium)})" !default;
+$micro-up: "#{$screen} and (min-width: #{$device-micro})" !default;
+$micro-down: "#{$screen} and (max-width: #{query-down($device-tiny)})" !default;
+$micro-only: "#{$screen} and (min-width: #{$device-micro}) and (max-width: #{query-down($device-tiny)})" !default;
 
-$medium-up: "#{$screen} and (min-width: #{query-down($device-medium)})" !default;
-$medium-down: "#{$screen} and (max-width: #{$device-medium})" !default;
+$tiny-up: "#{$screen} and (min-width: #{$device-tiny})" !default;
+$tiny-down: "#{$screen} and (max-width: #{query-down($device-small)})" !default;
+$tiny-only: "#{$screen} and (min-width: #{$device-tiny}) and (max-width: #{query-down($device-small)})" !default;
+
+$small-up: "#{$screen} and (min-width: #{$device-small})" !default;
+$small-down: "#{$screen} and (max-width: #{query-down($device-medium)})" !default;
+$small-only: "#{$screen} and (min-width: #{$device-small}) and (max-width: #{query-down($device-medium)})" !default;
+
+$medium-up: "#{$screen} and (min-width: #{$device-medium})" !default;
+$medium-down: "#{$screen} and (max-width: #{query-down($device-large)})" !default;
 $medium-only: "#{$screen} and (min-width: #{$device-medium}) and (max-width: #{query-down($device-large)})" !default;
+
+$large-up: "#{$screen} and (min-width: #{$device-large})" !default;
+$large-down: "#{$screen} and (max-width: #{query-down($device-xl)})" !default;
+$large-only: "#{$screen} and (min-width: #{$device-large}) and (max-width: #{query-down($device-xl)})" !default;
+
+$xl-up: "#{$screen} and (min-width: #{$device-xl})" !default;

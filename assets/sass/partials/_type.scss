@@ -9,21 +9,34 @@
 // FONT SIZES
 // -------------------------
 
-$font-size-micro: 	10px !default;
-$font-size-tiny: 	12px !default;
-$font-size-small: 	14px !default;
-$font-size-medium: 	$base-font-size !default;
-$font-size-large: 	18px !default;
-$font-size-xl: 		20px !default;
-$font-size-xxl: 	22px !default;
-$font-size-xxxl: 	30px !default;
-$font-size-huge: 	36px !default;
+$font-size-micro: 	ms(10px) !default;
+$font-size-tiny: 	ms(12px) !default;
+$font-size-small: 	ms(14px) !default;
+$font-size-medium: 	ms($base-font-size) !default;
+$font-size-large: 	ms(18px) !default;
+$font-size-xl: 		ms(20px) !default;
+$font-size-xxl: 	ms(22px) !default;
+$font-size-xxxl: 	ms(26px) !default;
+$font-size-huge: 	ms(32px) !default;
+
 
 // HEADINGS
 // -------------------------
 
-$heading-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
-$heading-color: $color-dark !default;
+$heading-family: 'Oxygen', sans-serif !default;
+$heading-color: $color-alert !default;
+
+// CODE
+// -------------------------
+
+$code-color: $color-alert !default;
+$code-border: 1px solid lighten($color-alert, 20) !default;
+$code-background: lighten($color-alert, 42) !default;
+
+
+
+// MIXINS
+// --------------------------------------------------
 
 
 // STYLE
@@ -38,39 +51,161 @@ h3,
 h4,
 h5,
 h6 {
-	display: block;
 	color: $heading-color;
 	font-family: $heading-family; 
+	display: block;
+	line-height: 1;
 }
 
-h1 {
+h1,
+.font-size.huge {
 	@include rem('font-size', $font-size-huge);
 }
 
-h2 {
+h1 {
+	@include rem('margin-top', ms(half($font-size-huge), 2));
+	@include rem('margin-bottom', ms(half($font-size-huge), 0));
+}
+
+h2,
+.font-size.xxxl {
 	@include rem('font-size', $font-size-xxxl);
 }
 
-h3 {
+h2 {
+	@include rem('margin-top', ms(half($font-size-xxxl), 2));
+	@include rem('margin-bottom', ms(half($font-size-xxxl), 0));
+}
+
+h3,
+.font-size.xxl {
 	@include rem('font-size', $font-size-xxl);
 }
 
-h4 {
+h3 {
+	@include rem('margin-top', ms(half($font-size-xxl), 2));
+	@include rem('margin-bottom', ms(half($font-size-xxl), 0));
+}
+
+h4,
+.font-size.xl {
 	@include rem('font-size', $font-size-xl);
 }
 
-h5 {
+h4 {
+	@include rem('margin-top', ms(half($font-size-xl), 2));
+	@include rem('margin-bottom', ms(half($font-size-xl), 0));
+}
+
+h5,
+.font-size.large {
 	@include rem('font-size', $font-size-large);
 }
 
-h6 {
+h5 {
+	@include rem('margin-top', ms(half($font-size-large), 2));
+	@include rem('margin-bottom', ms(half($font-size-large), 1));
+}
+
+h6,
+.font-size.medium {
 	@include rem('font-size', $font-size-medium);
 }
 
-// OTHER
+h6 {
+	@include rem('margin-top', ms(half($font-size-medium), 2));
+	@include rem('margin-bottom', ms(half($font-size-medium), 1));
+}
+
+.subheader {
+	font-weight: 300;
+}
+
+// GENERAL
 // -------------------------
 
 p {
 	@include rem('font-size', $base-font-size);
-	@include rem('margin-bottom', 16px );
+	@include rem('margin-bottom', ms($base-font-size));
+}
+
+// Bold 
+
+b,
+strong {
+	font-weight: bold;
+}
+
+// Italic
+
+em,
+i,
+q {
+	font-style: italic;
+	line-height: inherit;
+}
+
+code {
+	@include rem('padding', 0 2px);
+	color: $code-color;
+	border: $code-border;
+	background-color: $code-background;
+	white-space: nowrap;
+	border-radius: $base-radius;
+	display: inline-block;
+}
+
+code,
+kbd,
+pre,
+samp {
+    @include rem('font-size', ms($font-size-small));
+    @include rem('margin-bottom', ms($base-font-size));
+    font-family: monospace, serif;
+}
+
+// LISTS
+// -------------------------
+
+ul,
+ol {
+	@include rem('margin', ms($base-font-size) 0);
+	@include rem('padding', 0 0 0 40px);
+}
+
+ul ul, ol ol {
+	margin: 0;
+}
+
+ul {
+	list-style-position: outside; 
+	list-style-type: disc;
+	ul {
+		list-style-type: circle;
+	}
+}
+
+ol {
+	list-style-position: outside; 
+	list-style-type: decimal;
+	ol {
+		list-style-type: lower-roman;
+	}
+}
+
+// Unstyled List
+
+ul.plain, ol.plain {
+	padding: 0;
+	list-style-type: none;
+}
+
+// Inline List
+
+ul.inline, ol.inline {
+	padding: 0;
+	li {
+		display: inline-block;
+		@include rem('margin', 0 10px 0 0);
+	}
 }

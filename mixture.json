@@ -25,14 +25,14 @@
     "customRuby": false,
     "customRubyPath": null,
     "remoteDebugPort": 0,
-    "useNodeSass": true,
     "optimiseImages": true,
     "password": null,
     "ignoreDir": "ignore",
     "customTodos": null,
     "ftpSettings": null,
     "sass": {
-        "outputStyle": "nested"
+        "outputStyle": "nested",
+        "useLibSass": true
     },
     "sitemap": false,
     "gitHubPages": {
