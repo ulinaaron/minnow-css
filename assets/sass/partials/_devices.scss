@@ -21,6 +21,10 @@ $device-xl:		1280px !default;	// 1280px
 
 $visibility: true !default;
 
+$visibility-show-class: "show-for" !default;
+$visibility-hide-class: "hide-for" !default;
+$visibility-only-class: "only" !default;
+
 $screen: "only screen" !default;
 
 $micro-up: "#{$screen} and (min-width: #{rem($device-micro)})" !default;
@@ -49,102 +53,137 @@ $xl-up: "#{$screen} and (min-width: #{rem($device-xl)})" !default;
 
 @if $visibility == true {
 	@media #{$micro-up} {
-		.#{$ui-prefix}.hide-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 		{ display: inherit; }
 	}
 
 	@media #{$micro-only} {
-		.#{$ui-prefix}.hide-for.micro.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium.only { display: none !important; }
-		.#{$ui-prefix}.show-for.large.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl.only 	{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: none; }
 	}
 
 	@media #{$tiny-up} {
-		.#{$ui-prefix}.show-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 		{ display: inherit; }
 	}
 
 	@media #{$tiny-only} {
-		.#{$ui-prefix}.show-for.micro.only 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.tiny.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium.only { display: none !important; }
-		.#{$ui-prefix}.show-for.large.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl.only 	{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: none; }
 	}
 
 	@media #{$small-up} {
-		.#{$ui-prefix}.show-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 		{ display: inherit; }
 	}
 
 	@media #{$small-only} {
-		.#{$ui-prefix}.show-for.micro.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny.only 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.small.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium.only { display: none !important; }
-		.#{$ui-prefix}.show-for.large.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl.only 	{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: none; }
 	}
 
 	@media #{$medium-up} {
-		.#{$ui-prefix}.show-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 		{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 		{ display: inherit; }
 	}
 
 	@media #{$medium-only} {
-		.#{$ui-prefix}.show-for.micro.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small.only 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.medium.only { display: none !important; }
-		.#{$ui-prefix}.show-for.large.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl.only 	{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: none; }
 
 	}
 
 	@media #{$large-up} {
-		.#{$ui-prefix}.show-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium { display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 	{ display: inherit; }
 	}
 
 	@media #{$large-only} {
-		.#{$ui-prefix}.show-for.micro.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium.only { display: none !important; }
-		.#{$ui-prefix}.hide-for.large.only 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.xl.only 	{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: none; }
 	}
 
 	@media #{$xl-up} {
-		.#{$ui-prefix}.show-for.micro 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.tiny 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.small 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.medium 	{ display: none !important; }
-		.#{$ui-prefix}.show-for.large 	{ display: none !important; }
-		.#{$ui-prefix}.hide-for.xl 		{ display: none !important; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.micro 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.tiny 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.small 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.medium { display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.large 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl 	{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl 	{ display: none; }
+	}
+
+	@media #{$xl-up} {
+		.#{$ui-prefix}.#{$visibility-show-class}.micro.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.tiny.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.small.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.medium.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.large.#{$visibility-only-class} 	{ display: none; }
+		.#{$ui-prefix}.#{$visibility-show-class}.xl.#{$visibility-only-class} 		{ display: inherit; }
+		.#{$ui-prefix}.#{$visibility-hide-class}.xl.#{$visibility-only-class} 		{ display: none; }
 	}
 }
