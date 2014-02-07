@@ -5,7 +5,7 @@
 <div class="mw row">
 	<div class="large-12 small-12">
 		<h1>Minnow CSS</h1>
-		<p class="subheader font-size xxl">Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (<em>and then some</em>) created for them. Instead you will be given a solid foundation you carry with you from project to project.</p>
+		<p class="subheader font-size-xxl">Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (<em>and then some</em>) created for them. Instead you will be given a solid foundation you carry with you from project to project.</p>
 
 		<div class="mw row gutterless">
 			<div class="large-6 small-12 collapse-left">
@@ -286,7 +286,7 @@
 		<p>Minnow comes packed with quite a few useful visibility classes.</p>
 
 		<h5>Show For Classes</h5>
-		<p>The <code>mw.show-for</code> classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
+		<p>The <code>mw.show-for-*</code> classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
 	
 		<table class="mw table fluid">
 	        <thead>
@@ -302,57 +302,55 @@
 	        </thead>
 	        <tbody>
 	            <tr>
-					<td><code>.mw.show-for.tiny</code></td>
+					<td><code>.mw.show-for-tiny</code></td>
 					<td>Hide</td>
-					<td>Show</td>
-					<td>Show</td>
-					<td>Show</td>
-					<td>Show</td>
-					<td>Show</td>
+					<td><strong>Show</strong></td>
+					<td><strong>Show</strong></td>
+					<td><strong>Show</strong></td>
+					<td><strong>Show</strong></td>
+					<td><strong>Show</strong></td>
 	            </tr>
                 <tr>
-    				<td><code>.mw.show-for.small</code></td>
+    				<td><code>.mw.show-for-small</code></td>
     				<td>Hide</td>
     				<td>Hide</td>
-    				<td>Show</td>
-    				<td>Show</td>
-    				<td>Show</td>
-    				<td>Show</td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
                 </tr>
                 <tr>
-    				<td><code>.mw.show-for.medium</code></td>
+    				<td><code>.mw.show-for-medium</code></td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
-    				<td>Show</td>
-    				<td>Show</td>
-    				<td>Show</td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
                 </tr>
                 <tr>
-    				<td><code>.mw.show-for.large</code></td>
+    				<td><code>.mw.show-for-large</code></td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
-    				<td>Show</td>
-    				<td>Show</td>
+    				<td><strong>Show</strong></td>
+    				<td><strong>Show</strong></td>
                 </tr>
                 <tr>
-    				<td><code>.mw.show-for.xl</code></td>
+    				<td><code>.mw.show-for-xl</code></td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
     				<td>Hide</td>
-    				<td>Show</td>
+    				<td><strong>Show</strong></td>
                 </tr>
 	        </tbody>
     	</table>
 
     	<h5>Show For Only</h5>
-    	<p>The <code>.mw.show-for.only</code> classes are used to only show elements for the selected query.</p>
-
-    	<p><em>The visibility classes do not work with the<code>.font-size</code> classes.</em></p>
+    	<p>The <code>.mw.show-for-*.only</code> classes are used to only show elements for the selected query.</p>
 
     			<table class="mw table fluid">
     		        <thead>
@@ -367,55 +365,65 @@
     		            </tr>
     		        </thead>
     		        <tbody>
-    		            <tr>
-    						<td><code>.mw.show-for.tiny</code></td>
+    		        	<tr>
+    						<td><code>.mw.show-for-micro.only</code></td>
+    						<td><strong>Show</strong></td>
     						<td>Hide</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
+    						<td>Hide</td>
+    						<td>Hide</td>
+    						<td>Hide</td>
+    						<td>Hide</td>
+    		            </tr>
+    		            <tr>
+    						<td><code>.mw.show-for-tiny.only</code></td>
+    						<td>Hide</td>
+    						<td><strong>Show</strong></td>
+    						<td>Hide</td>
+    						<td>Hide</td>
+    						<td>Hide</td>
+    						<td>Hide</td>
     		            </tr>
     	                <tr>
-    	    				<td><code>.mw.show-for.small</code></td>
+    	    				<td><code>.mw.show-for-small.only</code></td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td>Hide</td>
+    	    				<td>Hide</td>
+    	    				<td>Hide</td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.show-for.medium</code></td>
+    	    				<td><code>.mw.show-for-medium.only</code></td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td>Hide</td>
+    	    				<td>Hide</td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.show-for.large</code></td>
+    	    				<td><code>.mw.show-for-large.only</code></td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td>Hide</td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.show-for.xl</code></td>
+    	    				<td><code>.mw.show-for-xl.only</code></td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
     	                </tr>
     		        </tbody>
     	    	</table>
 
     	<h5>Hide For</h5>
+    	<p>Elements with the <code>.mw.hide-for-*</code> class will only be hidden for that select query.</p>
     	<p></p>
 
     			<table class="mw table fluid">
@@ -432,57 +440,57 @@
     		        </thead>
     		        <tbody>
     		        	 <tr>
-    						<td><code>.mw.hide-for.micro</code></td>
+    						<td><code>.mw.hide-for-micro</code></td>
     						<td>Hide</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
     		            </tr>
     		            <tr>
-    						<td><code>.mw.hide-for.tiny</code></td>
-    						<td>Show</td>
+    						<td><code>.mw.hide-for-tiny</code></td>
+    						<td><strong>Show</strong></td>
     						<td>Hide</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
-    						<td>Show</td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
+    						<td><strong>Show</strong></td>
     		            </tr>
     	                <tr>
-    	    				<td><code>.mw.hide-for.small</code></td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><code>.mw.hide-for-small</code></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.hide-for.medium</code></td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><code>.mw.hide-for-medium</code></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.hide-for.large</code></td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><code>.mw.hide-for-large</code></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	    				<td>Hide</td>
-    	    				<td>Show</td>
+    	    				<td><strong>Show</strong></td>
     	                </tr>
     	                <tr>
-    	    				<td><code>.mw.hide-for.xl</code></td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
-    	    				<td>Show</td>
+    	    				<td><code>.mw.hide-for-xl</code></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
+    	    				<td><strong>Show</strong></td>
     	    				<td>Hide</td>
     	                </tr>
     		        </tbody>

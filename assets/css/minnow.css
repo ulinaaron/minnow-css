@@ -120,224 +120,108 @@ hr {
   border-bottom: 1px solid #c0c5ce; }
 
 @media only screen and (min-width: 15rem) {
-  .mw.hide-for.micro {
+  .mw.show-for-tiny, .mw.show-for-small, .mw.show-for-medium, .mw.show-for-large, .mw.show-for-xl {
+    display: none !important; }
+  .mw.hide-for-micro {
     display: none; }
-  .mw.show-for.tiny {
-    display: none; }
-  .mw.hide-for.tiny {
-    display: inherit; }
-  .mw.show-for.small {
-    display: none; }
-  .mw.hide-for.small {
-    display: inherit; }
-  .mw.show-for.medium {
-    display: none; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.show-for.large {
-    display: none; }
-  .mw.hide-for.large {
-    display: inherit; }
-  .mw.show-for.xl {
-    display: none; }
-  .mw.hide-for.xl {
-    display: inherit; } }
+  .mw.hide-for-tiny, .mw.hide-for-small, .mw.hide-for-medium, .mw.hide-for-large, .mw.hide-for-xl {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 15rem) and (max-width: 19.9375rem) {
-  .mw.show-for.micro.only {
-    display: inherit; }
-  .mw.hide-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: none; } }
+  .mw.show-for-micro.only {
+    display: inherit !important; }
+  .mw.show-for-tiny.only, .mw.show-for-small.only, .mw.show-for-medium.only, .mw.show-for-large.only, .mw.show-for-xl.only {
+    display: none !important; }
+  .mw.hide-for-micro.only {
+    display: none !important; } }
 
 @media only screen and (min-width: 20rem) {
-  .mw.show-for.tiny {
-    display: inherit; }
-  .mw.hide-for.tiny {
-    display: none; }
-  .mw.show-for.small {
-    display: none; }
-  .mw.hide-for.small {
-    display: inherit; }
-  .mw.show-for.medium {
-    display: none; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.show-for.large {
-    display: none; }
-  .mw.hide-for.large {
-    display: inherit; }
-  .mw.show-for.xl {
-    display: none; }
-  .mw.hide-for.xl {
-    display: inherit; } }
+  .mw.show-for-tiny {
+    display: inherit !important; }
+  .mw.show-for-small, .mw.show-for-medium, .mw.show-for-large, .mw.show-for-xl {
+    display: none !important; }
+  .mw.hide-for-tiny {
+    display: none !important; }
+  .mw.hide-for-small, .mw.hide-for-medium, .mw.hide-for-large, .mw.hide-for-xl {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 20rem) and (max-width: 29.9375rem) {
-  .mw.show-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: inherit; }
-  .mw.hide-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: none; } }
+  .mw.show-for-tiny.only {
+    display: inherit !important; }
+  .mw.show-for-micro.only, .mw.show-for-small.only, .mw.show-for-medium.only, .mw.show-for-large.only, .mw.show-for-xl.only {
+    display: none !important; }
+  .mw.hide-for-tiny.only {
+    display: none !important; } }
 
 @media only screen and (min-width: 30rem) {
-  .mw.hide-for.micro {
-    display: inherit; }
-  .mw.hide-for.tiny {
-    display: inherit; }
-  .mw.show-for.small {
-    display: inherit; }
-  .mw.hide-for.small {
-    display: none; }
-  .mw.show-for.medium {
-    display: none; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.show-for.large {
-    display: none; }
-  .mw.hide-for.large {
-    display: inherit; }
-  .mw.show-for.xl {
-    display: none; }
-  .mw.hide-for.xl {
-    display: inherit; } }
+  .mw.show-for-small {
+    display: inherit !important; }
+  .mw.show-for-medium, .mw.show-for-large, .mw.show-for-xl {
+    display: none !important; }
+  .mw.hide-for-small {
+    display: none !important; }
+  .mw.hide-for-micro, .mw.hide-for-tiny, .mw.hide-for-medium, .mw.hide-for-large, .mw.hide-for-xl {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 30rem) and (max-width: 47.9375rem) {
-  .mw.show-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: inherit; }
-  .mw.hide-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: none; } }
+  .mw.show-for-small.only {
+    display: inherit !important; }
+  .mw.show-for-micro.only, .mw.show-for-tiny.only, .mw.show-for-medium.only, .mw.show-for-large.only, .mw.show-for-xl.only {
+    display: none !important; }
+  .mw.hide-for-small.only {
+    display: none !important; } }
 
 @media only screen and (min-width: 48rem) {
-  .mw.hide-for.micro {
-    display: inherit; }
-  .mw.hide-for.tiny {
-    display: inherit; }
-  .mw.hide-for.small {
-    display: inherit; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.show-for.medium {
-    display: inherit; }
-  .mw.hide-for.medium {
-    display: none; }
-  .mw.show-for.large {
-    display: none; }
-  .mw.hide-for.large {
-    display: inherit; }
-  .mw.show-for.xl {
-    display: none; }
-  .mw.hide-for.xl {
-    display: inherit; } }
+  .mw.show-for-medium {
+    display: inherit !important; }
+  .mw.show-for-large, .mw.show-for-xl {
+    display: none !important; }
+  .mw.hide-for-medium {
+    display: none !important; }
+  .mw.hide-for-micro, .mw.hide-for-tiny, .mw.hide-for-small, .mw.hide-for-medium, .mw.hide-for-large, .mw.hide-for-xl {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  .mw.show-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: inherit; }
-  .mw.hide-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: none; } }
+  .mw.show-for-medium.only {
+    display: inherit !important; }
+  .mw.show-for-micro.only, .mw.show-for-tiny.only, .mw.show-for-small.only, .mw.show-for-large.only, .mw.show-for-xl.only {
+    display: none !important; }
+  .mw.hide-for-medium.only {
+    display: none !important; } }
 
 @media only screen and (min-width: 64rem) {
-  .mw.hide-for.micro {
-    display: inherit; }
-  .mw.hide-for.tiny {
-    display: inherit; }
-  .mw.hide-for.small {
-    display: inherit; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.show-for.large {
-    display: inherit; }
-  .mw.hide-for.large {
-    display: none; }
-  .mw.show-for.xl {
-    display: none; }
-  .mw.hide-for.xl {
-    display: inherit; } }
+  .mw.show-for-large {
+    display: inherit !important; }
+  .mw.show-for-xl {
+    display: none !important; }
+  .mw.hide-for-large {
+    display: none !important; }
+  .mw.hide-for-micro, .mw.hide-for-tiny, .mw.hide-for-small, .mw.hide-for-medium, .mw.hide-for-xl {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 64rem) and (max-width: 79.9375rem) {
-  .mw.show-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: inherit; }
-  .mw.hide-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: none; } }
+  .mw.show-for-large.only {
+    display: inherit !important; }
+  .mw.show-for-micro.only, .mw.show-for-tiny.only, .mw.show-for-small.only, .mw.show-for-medium.only {
+    display: none !important; }
+  .mw.hide-for-large.only, .mw.show-for-xl.only {
+    display: none !important; } }
 
 @media only screen and (min-width: 80rem) {
-  .mw.hide-for.micro {
-    display: inherit; }
-  .mw.hide-for.tiny {
-    display: inherit; }
-  .mw.hide-for.small {
-    display: inherit; }
-  .mw.hide-for.medium {
-    display: inherit; }
-  .mw.hide-for.large {
-    display: inherit; }
-  .mw.show-for.xl {
-    display: inherit; }
-  .mw.hide-for.xl {
-    display: none; } }
+  .mw.show-for-xl {
+    display: inherit !important; }
+  .mw.hide-for-xl {
+    display: none !important; }
+  .mw.hide-for-micro, .mw.hide-for-tiny, .mw.hide-for-small, .mw.hide-for-medium, .mw.hide-for-large {
+    display: inherit !important; } }
 
 @media only screen and (min-width: 80rem) {
-  .mw.show-for.micro.only {
-    display: none; }
-  .mw.show-for.tiny.only {
-    display: none; }
-  .mw.show-for.small.only {
-    display: none; }
-  .mw.show-for.medium.only {
-    display: none; }
-  .mw.show-for.large.only {
-    display: none; }
-  .mw.show-for.xl.only {
-    display: inherit; }
-  .mw.hide-for.xl.only {
-    display: none; } }
+  .mw.show-for-xl.only {
+    display: inherit !important; }
+  .mw.show-for-micro.only, .mw.show-for-tiny.only, .mw.show-for-small.only, .mw.show-for-medium.only, .mw.show-for-large.only {
+    display: none !important; }
+  .mw.hide-for-xl.only {
+    display: none !important; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #bf616a;
@@ -345,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   line-height: 1; }
 
-h1, .font-size.huge {
+h1, .font-size-huge {
   font-size: 32px;
   font-size: 2rem; }
 
@@ -355,7 +239,7 @@ h1 {
   margin-bottom: 16px;
   margin-bottom: 1rem; }
 
-h2, .font-size.xxxl {
+h2, .font-size-xxxl {
   font-size: 26px;
   font-size: 1.625rem; }
 
@@ -365,7 +249,7 @@ h2 {
   margin-bottom: 13px;
   margin-bottom: 0.8125rem; }
 
-h3, .font-size.xxl {
+h3, .font-size-xxl {
   font-size: 22px;
   font-size: 1.375rem; }
 
@@ -375,7 +259,7 @@ h3 {
   margin-bottom: 11px;
   margin-bottom: 0.6875rem; }
 
-h4, .font-size.xl {
+h4, .font-size-xl {
   font-size: 20px;
   font-size: 1.25rem; }
 
@@ -385,7 +269,7 @@ h4 {
   margin-bottom: 10px;
   margin-bottom: 0.625rem; }
 
-h5, .font-size.large {
+h5, .font-size-large {
   font-size: 18px;
   font-size: 1.125rem; }
 
@@ -395,7 +279,7 @@ h5 {
   margin-bottom: 14.562px;
   margin-bottom: 0.91013rem; }
 
-h6, .font-size.medium {
+h6, .font-size-medium {
   font-size: 16px;
   font-size: 1rem; }
 
