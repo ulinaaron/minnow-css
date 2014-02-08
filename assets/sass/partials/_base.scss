@@ -162,6 +162,12 @@ body {
   @include box-sizing(border-box);
 }
 
+// UTILITIES
+// -------------------------
+
+.relative { position: relative; }
+.fixed    { position: fixed; }
+
 // ALIGNMENTS
 // -------------------------
 
