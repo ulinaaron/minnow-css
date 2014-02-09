@@ -26,13 +26,18 @@ $font-size-huge: 	ms(32px) !default;
 $heading-family: 'Oxygen', sans-serif !default;
 $heading-color: $color-alert !default;
 
+// BLOCKQUOTE
+// -------------------------
+
+$blockquote-font-family: $base-font-family-alternative !default;
+$blockquote-border-left: 4px solid $color-lighter !default;
+
 // CODE
 // -------------------------
 
 $code-color: $color-alert !default;
 $code-border: 1px solid lighten($color-alert, 20) !default;
 $code-background: lighten($color-alert, 42) !default;
-
 
 
 // MIXINS
@@ -117,6 +122,18 @@ h6 {
 	@include rem('margin-bottom', ms(half($font-size-medium), 1));
 }
 
+.font-size-small {
+	@include rem('font-size', $font-size-small);
+}
+
+.font-size-tiny {
+	@include rem('font-size', $font-size-tiny);
+}
+
+.font-size-micro {
+	@include rem('font-size', $font-size-micro);
+}
+
 .subheader {
 	font-weight: 300;
 }
@@ -162,6 +179,26 @@ samp {
     @include rem('font-size', ms($font-size-small));
 
     font-family: monospace, serif;
+}
+
+// BLOCKQUOTE
+// -------------------------
+
+blockquote {
+	font-family: $blockquote-font-family;
+	@include rem('padding-left', ms(20px, 0));
+	@include rem('margin', 10px ms(40px, 0));
+	border-left: $blockquote-border-left;
+
+	cite {
+		display: block;
+		@include rem('margin', 10px 0 0);
+	}
+
+	cite:before {
+		content: "-";
+		@include rem('padding', 0 10px 0 0);
+	}
 }
 
 // LISTS
