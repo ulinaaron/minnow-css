@@ -79,6 +79,12 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.relative {
+  position: relative; }
+
+.fixed {
+  position: fixed; }
+
 .float-left {
   float: left; }
 
@@ -223,6 +229,78 @@ hr {
   .mw.hide-for-xl.only {
     display: none !important; } }
 
+.mw.button {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 16.18px;
+  padding: 0 1.01125rem;
+  margin-bottom: 6.18047px;
+  margin-bottom: 0.38628rem;
+  line-height: 2.75;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #65737e;
+  color: #eff1f5; }
+  .mw.button:hover {
+    background-color: #383f45; }
+  .mw.button, .mw.button:hover {
+    text-decoration: none; }
+  .mw.button:active, .mw.button:focus {
+    outline: none; }
+  .mw.button.primary {
+    background-color: #8fa1b3;
+    color: #eff1f5; }
+    .mw.button.primary:hover {
+      background-color: #596e83; }
+  .mw.button.secondary {
+    background-color: #b48ead;
+    color: #eff1f5; }
+    .mw.button.secondary:hover {
+      background-color: #84587c; }
+  .mw.button.tertiary {
+    background-color: #ab7967;
+    color: #eff1f5; }
+    .mw.button.tertiary:hover {
+      background-color: #6f4a3d; }
+
+.mw.button.fluid {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0; }
+
+.mw.button.micro {
+  padding: 0 10px;
+  padding: 0 0.625rem;
+  line-height: 2; }
+.mw.button.tiny {
+  padding: 0 20.225px;
+  padding: 0 1.26406rem;
+  line-height: 2.25; }
+.mw.button.small {
+  padding: 0 28.315px;
+  padding: 0 1.76969rem;
+  line-height: 2.5; }
+.mw.button.medium {
+  padding: 0 39.26886px;
+  padding: 0 2.4543rem; }
+.mw.button.large {
+  padding: 0 52.94751px;
+  padding: 0 3.30922rem; }
+.mw.button.xl {
+  padding: 0 63.53702px;
+  padding: 0 3.97106rem; }
+.mw.button.xxl {
+  padding: 0 74.12652px;
+  padding: 0 4.63291rem; }
+.mw.button.xxxl {
+  padding: 0 102.80289px;
+  padding: 0 6.42518rem; }
+.mw.button.huge {
+  padding: 0 138.61256px;
+  padding: 0 8.66329rem; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #bf616a;
   font-family: 'Oxygen', sans-serif;
@@ -289,6 +367,18 @@ h6 {
   margin-bottom: 12.944px;
   margin-bottom: 0.809rem; }
 
+.font-size-small {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.font-size-tiny {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.font-size-micro {
+  font-size: 10px;
+  font-size: 0.625rem; }
+
 .subheader {
   font-weight: 300; }
 
@@ -319,6 +409,14 @@ code, kbd, pre, samp {
   font-size: 14px;
   font-size: 0.875rem;
   font-family: monospace, serif; }
+
+blockquote {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  margin: 10px 40px;
+  margin: 0.625rem 2.5rem;
+  border-left: 4px solid #dfe1e8; }
 
 ul, ol {
   margin: 16px 0;
@@ -483,70 +581,6 @@ dd {
     width: 91.66667%; }
   .small-12 {
     width: 100%; } }
-
-.mw.button {
-  padding: 9.88875px 25.888px;
-  padding: 0.61805rem 1.618rem;
-  margin-bottom: 9.88875px;
-  margin-bottom: 0.61805rem;
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: #65737e;
-  color: #eff1f5; }
-  .mw.button:hover {
-    text-decoration: none; }
-  .mw.button.primary {
-    background-color: #8fa1b3;
-    color: #eff1f5; }
-  .mw.button.secondary {
-    background-color: #b48ead;
-    color: #eff1f5; }
-  .mw.button.tertiary {
-    background-color: #ab7967;
-    color: #eff1f5; }
-
-.mw.button.fluid {
-  display: block;
-  width: 100%;
-  text-align: center; }
-
-.mw.button.micro {
-  font-size: 10px;
-  font-size: 0.625rem; }
-.mw.button.tiny {
-  font-size: 12px;
-  font-size: 0.75rem;
-  font-size: 12px; }
-.mw.button.small {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-size: 14px; }
-.mw.button.medium {
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-size: 14px; }
-.mw.button.large {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-size: 18px; }
-.mw.button.xl {
-  font-size: 20px;
-  font-size: 1.25rem;
-  font-size: 20px; }
-.mw.button.xxl {
-  font-size: 22px;
-  font-size: 1.375rem;
-  font-size: 22px; }
-.mw.button.xxxl {
-  font-size: 26px;
-  font-size: 1.625rem;
-  font-size: 26px; }
-.mw.button.huge {
-  font-size: 32px;
-  font-size: 2rem;
-  font-size: 32px; }
 
 .mw.segment {
   padding: 10px;

@@ -14,15 +14,17 @@
 
     </head>
     <body>
-        <div id="wrapper" class="mw wrapper hide-for-xl hide-for-small">
+        <div id="wrapper" class="mw wrapper">
             <!-- Include -->
             
             <!-- Content block, child page inject content -->
-             
-<div class="mw row">
+            
+<!-- docs.intro -->
+<div id="docs.intro" class="mw row">
 	<div class="large-12 small-12">
 		<h1>Minnow CSS</h1>
 		<p class="subheader font-size-xxl">Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (<em>and then some</em>) created for them. Instead you will be given a solid foundation you carry with you from project to project.</p>
+
 		<div class="mw row gutterless">
 			<div class="large-6 small-12 collapse-left">
 				<h4>A Responsive Grid</h4>
@@ -43,10 +45,19 @@
 				<p>A feature-packed SCSS variable file that can be used for making global changes at a rapid pace.</p>
 			</div>
 		</div>
+
 		<h3>So what's missing?</h3>
 		<p>In order to keep Minnow as tiny as possible lot of general "CSS Framework" features are not included. There are no Javascript/JQuery dependent modules. Variations for core modules are excluded but can easily be created by the extensive nature of the framework. There is plans to create extensive features in the future and include them as optional add-ons.</p>
+
 		<hr>
+	</div>
+</div>
+<!-- /docs.intro -->
+<!-- .docs.type -->
+<div id="docs.type" class="mw row">
+	<div class="small-12 large-12">
 		<h4>Typography</h4>
+
 		<div class="mw row">
 			<div class="large-6 small-12">
 				<h1>Heading One</h1>
@@ -65,9 +76,12 @@
 				<a href="#"><h6>H6 Link</h6></a>
 			</div>
 		</div>
+
+		<h4>List Styles</h4>
+
 		<div class="mw row">
 			<div class="large-6 small-12">
-				<h4>Unordered List</h4>
+				<h5>Unordered List</h5>
 				<ul>
 					<li>Lorem ipsum dolor sit amet</li>
 					<li>Lorem ipsum dolor sit amet</li>
@@ -80,7 +94,8 @@
 					</li>
 					<li>Lorem ipsum dolor sit amet</li>
 				</ul>
-				<h4>Plain List</h4>
+
+				<h5>Plain List</h5>
 				<ul class="plain">
 					<li>Lorem ipsum dolor sit amet</li>
 					<li>Lorem ipsum dolor sit amet</li>
@@ -88,7 +103,7 @@
 				</ul>
 			</div>
 			<div class="large-6 small-12">
-				<h4>Ordered List</h4>
+				<h5>Ordered List</h5>
 				<ol>
 					<li>Lorem ipsum dolor sit amet</li>
 					<li>Lorem ipsum dolor sit amet</li>
@@ -101,7 +116,8 @@
 					</li>
 					<li>Lorem ipsum dolor sit amet</li>
 				</ol>
-				<h4>Inline List</h4>
+
+				<h5>Inline List</h5>
 				<ul class="inline">
 					<li>Item 1</li>
 					<li>Item 2</li>
@@ -110,9 +126,10 @@
 				</ul>
 			</div>
 		</div>
+
 		<div class="mw row">
 			<div class="large-6 small-12">
-				<h4>Definition List</h4>
+				<h5>Definition List</h5>
 				<dl>
 					<dt>Definition Term</dt>
 					<dd>Definition Description</dd>
@@ -123,29 +140,158 @@
 				</dl>
 			</div>
 			<div class="large-6 small-12">
+				
 			</div>
 		</div>
-		<h4>Buttons</h4>
-		<a href="#" class="mw button">Click Here</a>
-		<a href="#" class="mw button primary">Click Here</a>
-		<a href="#" class="mw button secondary">Click Here</a>
-		<a href="#" class="mw button tertiary">Click Here</a>
-		<a href="#" class="mw button fluid">Click Here</a>
-		<a href="#" class="mw button micro">Click Here</a>
-		<a href="#" class="mw button tiny">Click Here</a>
-		<a href="#" class="mw button small">Click Here</a>
-		<a href="#" class="mw button medium">Click Here</a>
-		<a href="#" class="mw button large">Click Here</a>
-		<a href="#" class="mw button xl">Click Here</a>
-		<a href="#" class="mw button xxl">Click Here</a>
-		<a href="#" class="mw button xxxl">Click Here</a>
-		<a href="#" class="mw button huge">Click Here</a>
+
+		<h4>Blockquotes</h4>
+
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam, mollitia, est atque vero aspernatur voluptates error consectetur blanditiis unde voluptate perferendis distinctio obcaecati veniam rem in facere veritatis placeat delectus odit natus dolorum accusamus aperiam eligendi voluptatum laborum ut!
+		</blockquote>
 	</div>
 </div>
-<div class="mw row">
+<!-- /.docs.type -->
+<!-- docs.buttons -->
+<div id="docs.buttons" class="mw row">
+	<div class="large-12 small-12">
+		<h4>Buttons</h4>
+
+		<h5>Button Styles</h5>
+
+		<table class="mw table fluid">
+			<thead>
+				<tr>
+					<th>Button</th>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="#" class="mw button">Button</a>
+					</td>
+					<td><code>.mw.button</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button primary">Primary</a>
+					</td>
+					<td><code>.mw.button.primary</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button secondary">Secondary</a>
+					</td>
+					<td><code>.mw.button.secondary</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button tertiary">Tertiary</a>
+					</td>
+					<td><code>.mw.button.tertiary</code></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5>Button Sizes</h5>
+		<p>Minnow button sizes effect the padding and line-height. They do not alter the font size of the buttons. To change the font sizes use the <code>.font-size-*</code> classes.</p>
+
+		<table class="mw table fluid">
+			<thead>
+				<tr>
+					<th>Button</th>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="#" class="mw button micro">Button</a>
+					</td>
+					<td><code>.mw.button.micro</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button tiny">Button</a>
+					</td>
+					<td><code>.mw.button.tiny</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button small">Button</a>
+					</td>
+					<td><code>.mw.button.small</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button medium">Button</a>
+					</td>
+					<td><code>.mw.button.medium</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button large">Button</a>
+					</td>
+					<td><code>.mw.button.large</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button xl">Button</a>
+					</td>
+					<td><code>.mw.button.xl</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button xxl">Button</a>
+					</td>
+					<td><code>.mw.button.xxl</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button xxxl">Button</a>
+					</td>
+					<td><code>.mw.button.xxxl</code></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="mw button huge">Button</a>
+					</td>
+					<td><code>.mw.button.huge</code></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h5>Fluid Width Buttons</h5>
+
+		<p>Use <code>.mw.button.fluid</code> to make the button span the full-width of its container.</p>
+
+		<a href="#" class="mw button fluid">Fluid Button</a>
+
+	</div>
+</div>
+<!-- /docs.buttons -->
+<!-- .docs.segments -->
+<div id="docs.segments" class="mw row">
 	<div class="large-12 small-12">
 		<h4>Segments</h4>
 		<p>These are seperations of content, commonly referred to as panels.</p>
+
 		<table class="mw table fluid">
 	        <thead>
 	            <tr>
@@ -171,10 +317,14 @@
 		</div>
 	</div>
 </div>
-<div class="mw row">
+<!-- /.docs.segments -->
+<!-- .docs.grid -->
+<div id="docs.grid" class="mw row">
 	<div class="large-12">
 		<h4>Grid</h4>
+
 		<p>The Minnow grid is small yet highly powerful. It is responsive and can be used in full-width fluid layouts. If you would like to have a fixed-width container you can use the <code>.mw.wrapper</code> classes.</p> Columns can also be nested but the inner-gutters will not be cleared automatically.
+
 		<table class="mw table fluid">
 	        <thead>
 	            <tr>
@@ -280,12 +430,16 @@
 		</div>
 	</div>
 </div>
-<div class="mw row">
+<!-- /.docs.grid -->
+<!-- .docs.visibility -->
+<div id="docs.visibility" class="mw row">
 	<div class="large-12 small-12">
 		<h4>Visibility Classes</h4>
 		<p>Minnow comes packed with quite a few useful visibility classes.</p>
+
 		<h5>Show For Classes</h5>
 		<p>The <code>mw.show-for-*</code> classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
+	
 		<table class="mw table fluid">
 	        <thead>
 	            <tr>
@@ -346,8 +500,10 @@
                 </tr>
 	        </tbody>
     	</table>
+
     	<h5>Show For Only</h5>
     	<p>The <code>.mw.show-for-*.only</code> classes are used to only show elements for the selected query.</p>
+
     			<table class="mw table fluid">
     		        <thead>
     		            <tr>
@@ -417,9 +573,11 @@
     	                </tr>
     		        </tbody>
     	    	</table>
+
     	<h5>Hide For</h5>
     	<p>Elements with the <code>.mw.hide-for-*</code> class will only be hidden for that select query.</p>
     	<p></p>
+
     			<table class="mw table fluid">
     		        <thead>
     		            <tr>
@@ -491,6 +649,7 @@
     	    	</table>
 	</div>
 </div>
+<!-- .docs.visibility -->
 
         </div>
         <!-- Script block allowing child pages to inject their own scripts -->
