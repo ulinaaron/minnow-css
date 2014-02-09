@@ -491,68 +491,96 @@ dd {
     width: 100%; } }
 
 .mw.button {
-  padding: 9.88875px 25.888px;
-  padding: 0.61805rem 1.618rem;
-  margin-bottom: 9.88875px;
-  margin-bottom: 0.61805rem;
   display: inline-block;
   white-space: nowrap;
+  padding: 0 16.18px;
+  padding: 0 1.01125rem;
+  margin-bottom: 6.18047px;
+  margin-bottom: 0.38628rem;
+  line-height: 3;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 6px;
   background-color: #65737e;
   color: #eff1f5; }
   .mw.button:hover {
+    background-color: #383f45; }
+  .mw.button, .mw.button:hover {
     text-decoration: none; }
+  .mw.button:active, .mw.button:focus {
+    outline: none; }
   .mw.button.primary {
     background-color: #8fa1b3;
     color: #eff1f5; }
+    .mw.button.primary:hover {
+      background-color: #596e83; }
   .mw.button.secondary {
     background-color: #b48ead;
     color: #eff1f5; }
+    .mw.button.secondary:hover {
+      background-color: #84587c; }
   .mw.button.tertiary {
     background-color: #ab7967;
     color: #eff1f5; }
+    .mw.button.tertiary:hover {
+      background-color: #6f4a3d; }
 
 .mw.button.fluid {
   display: block;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding: 0; }
 
 .mw.button.micro {
   font-size: 10px;
-  font-size: 0.625rem; }
+  font-size: 0.625rem;
+  padding: 0 10px;
+  padding: 0 0.625rem;
+  line-height: 2; }
 .mw.button.tiny {
   font-size: 12px;
   font-size: 0.75rem;
-  font-size: 12px; }
+  padding: 0 16.18px;
+  padding: 0 1.01125rem;
+  line-height: 2.25; }
 .mw.button.small {
   font-size: 14px;
   font-size: 0.875rem;
-  font-size: 14px; }
+  padding: 0 16.18px;
+  padding: 0 1.01125rem;
+  line-height: 2.5; }
 .mw.button.medium {
   font-size: 14px;
   font-size: 0.875rem;
-  font-size: 14px; }
+  padding: 0 26.17924px;
+  padding: 0 1.6362rem;
+  line-height: 3; }
 .mw.button.large {
   font-size: 18px;
   font-size: 1.125rem;
-  font-size: 18px; }
+  padding: 0 42.35801px;
+  padding: 0 2.64738rem;
+  line-height: 3; }
 .mw.button.xl {
   font-size: 20px;
   font-size: 1.25rem;
-  font-size: 20px; }
+  padding: 0 42.35801px;
+  padding: 0 2.64738rem; }
 .mw.button.xxl {
   font-size: 22px;
   font-size: 1.375rem;
-  font-size: 22px; }
+  padding: 0 52.94751px;
+  padding: 0 3.30922rem; }
 .mw.button.xxxl {
   font-size: 26px;
   font-size: 1.625rem;
-  font-size: 26px; }
+  padding: 0 68.53526px;
+  padding: 0 4.28345rem; }
 .mw.button.huge {
   font-size: 32px;
   font-size: 2rem;
-  font-size: 32px; }
+  padding: 0 138.61256px;
+  padding: 0 8.66329rem; }
 
 .mw.segment {
   padding: 10px;
