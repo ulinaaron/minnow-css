@@ -2,7 +2,7 @@
 
 Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (and then some) created for them. Instead you will be given a solid foundation you carry with you from project to project.
 
-**Minnow is currently a work in progress and is not meant for any production use.**
+<span style="color: red;">**Minnow is currently a work in progress and is not meant for any production use.**</span>
 
 ### A Responsive Grid
 
