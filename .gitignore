@@ -46,4 +46,4 @@ Icon
 # Ignore Mixture Files Files
 
 # Not sure if I want this in the project yet...
-.codekit
+config.codekit
