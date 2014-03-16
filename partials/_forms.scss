@@ -1,0 +1,84 @@
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER
+// --------------------------------------------------
+
+$form-base-size: 10px !default;
+
+$input-border: 1px solid $color-light;
+$input-border-radius-enable: true !default;
+$input-border-radius: $base-radius !default;
+
+$form-item-group-label-width: 150px !default;
+$form-aligned-label-margin: $form-base-size !default;
+$form-item-offset: $form-item-group-label-width + $form-aligned-label-margin !default;
+
+
+// FUNCTIONS
+// --------------------------------------------------
+
+
+// MIXINS
+// --------------------------------------------------
+
+
+// STYLE
+// --------------------------------------------------
+
+form.#{$ui-prefix} {}
+
+form.#{$ui-prefix}.form-stacked {
+	
+	label,
+	input {
+		display: block;
+	}
+
+	label {
+		@include rem('margin-bottom', ms($form-base-size, 0));
+	}
+}
+
+form.#{$ui-prefix}.form-aligned {
+
+	label {
+		@include rem('width', $form-item-group-label-width);
+		@include rem('margin-right', ms($form-base-size, 0));
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+// Reset plain input
+
+input {
+	margin: 0;
+	border: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+	border: $input-border;
+	@include rem('padding', ms($form-base-size, 0) ms($form-base-size, 1));
+
+	@if $input-border-radius-enable == true {
+		border-radius: $input-border-radius;
+	}
+}
+
+input[type="submit"] {
+	@extend .#{$ui-prefix}.button;
+}
+
+// Form Items 
+//
+// Used to create spacing between rows, labels and inputs.
+
+.form-group {
+	@include rem('margin-bottom', ms($form-base-size, 0));
+}
+
+form.#{$ui-prefix}.form-aligned .form-item {
+	@include rem('margin-left', ms($form-item-offset, 0));
+}

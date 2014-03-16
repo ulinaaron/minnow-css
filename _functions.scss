@@ -1,0 +1,91 @@
+// * GLOBAL FUNCTIONS *
+// --------------------------------------------------
+
+// Raw Units
+//
+// Removes the unit from the value
+
+@function raw-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Halves
+
+@function half($value) {
+	@return $value / 2;
+}
+
+// Rem Calculator
+//
+// Takes a pixel value and strips the units and multiples it by rems.
+
+@function rem($px) {
+	$value-divide: raw-unit($px) / raw-unit($base-rem); 
+	@return #{$value-divide}rem;
+}
+
+// Query Down
+//
+// Takes the pixel value minus one and turns it into rems.
+
+@function query-down($value) {
+	$value-base: raw-unit($value) - 1;
+	@return rem($value-base);
+}
+
+
+// Modular Scale Function
+//
+// Based on the Bourbon Modular Scale Function
+// https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/functions/_modular-scale.scss
+
+// Scaling Varaibles
+$golden:           1.618;
+
+@function ms($value, $increment: 0, $ratio: $golden) {
+  $v1: nth($value, 1);
+  $v2: nth($value, length($value));
+  $value: $v1;
+
+  // scale $v2 to just above $v1
+  @while $v2 > $v1 {
+    $v2: ($v2 / $ratio); // will be off-by-1
+  }
+  @while $v2 < $v1 {
+    $v2: ($v2 * $ratio); // will fix off-by-1
+  }
+
+  // check AFTER scaling $v2 to prevent double-counting corner-case
+  $double-stranded: $v2 > $v1;
+
+  @if $increment > 0 {
+    @for $i from 1 through $increment {
+      @if $double-stranded and ($v1 * $ratio) > $v2 {
+        $value: $v2;
+        $v2: ($v2 * $ratio);
+      } @else {
+        $v1: ($v1 * $ratio);
+        $value: $v1;
+      }
+    }
+  }
+
+  @if $increment < 0 {
+    // adjust $v2 to just below $v1
+    @if $double-stranded {
+      $v2: ($v2 / $ratio);
+    }
+
+    @for $i from $increment through -1 {
+      @if $double-stranded and ($v1 / $ratio) < $v2 {
+        $value: $v2;
+        $v2: ($v2 / $ratio);
+      } @else {
+        $v1: ($v1 / $ratio);
+        $value: $v1;
+      }
+    }
+  }
+
+  @return $value;
+}
