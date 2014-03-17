@@ -2,14 +2,14 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "16844",
 "files": {
-	"\/_custom.scss": {
+	"\/sass\/_custom.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_custom.scss",
+		"inputAbbreviatedPath": "\/sass\/_custom.scss",
 		"outputAbbreviatedPath": "\/css\/_custom.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -17,14 +17,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_functions.scss": {
+	"\/sass\/_functions.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_functions.scss",
+		"inputAbbreviatedPath": "\/sass\/_functions.scss",
 		"outputAbbreviatedPath": "\/css\/_functions.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -32,14 +32,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_guide.scss": {
+	"\/sass\/_guide.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_guide.scss",
+		"inputAbbreviatedPath": "\/sass\/_guide.scss",
 		"outputAbbreviatedPath": "\/css\/_guide.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -47,14 +47,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_import.scss": {
+	"\/sass\/_import.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_import.scss",
+		"inputAbbreviatedPath": "\/sass\/_import.scss",
 		"outputAbbreviatedPath": "\/css\/_import.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -62,14 +62,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_reset.scss": {
+	"\/sass\/_reset.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_reset.scss",
+		"inputAbbreviatedPath": "\/sass\/_reset.scss",
 		"outputAbbreviatedPath": "\/css\/_reset.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -77,14 +77,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_variables.scss": {
+	"\/sass\/_variables.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_variables.scss",
+		"inputAbbreviatedPath": "\/sass\/_variables.scss",
 		"outputAbbreviatedPath": "\/css\/_variables.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -92,29 +92,14 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/minnow.docs.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 5,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/minnow.docs.scss",
-		"outputAbbreviatedPath": "\/css\/minnow.docs.css",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/minnow.scss": {
+	"\/sass\/minnow.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/minnow.scss",
+		"inputAbbreviatedPath": "\/sass\/minnow.scss",
 		"outputAbbreviatedPath": "\/css\/minnow.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -122,120 +107,120 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_base.scss": {
+	"\/sass\/partials\/_base.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_base.scss",
-		"outputAbbreviatedPath": "\/css\/_base.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_base.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_base.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_buttons.scss": {
+	"\/sass\/partials\/_buttons.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_buttons.scss",
-		"outputAbbreviatedPath": "\/css\/_buttons.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_buttons.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_buttons.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_devices.scss": {
+	"\/sass\/partials\/_devices.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_devices.scss",
-		"outputAbbreviatedPath": "\/css\/_devices.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_devices.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_devices.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_forms.scss": {
+	"\/sass\/partials\/_forms.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_forms.scss",
-		"outputAbbreviatedPath": "\/css\/_forms.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_forms.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_forms.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_grid.scss": {
+	"\/sass\/partials\/_grid.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_grid.scss",
-		"outputAbbreviatedPath": "\/css\/_grid.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_grid.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_grid.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_segments.scss": {
+	"\/sass\/partials\/_segments.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_segments.scss",
-		"outputAbbreviatedPath": "\/css\/_segments.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_segments.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_segments.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_tables.scss": {
+	"\/sass\/partials\/_tables.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_tables.scss",
-		"outputAbbreviatedPath": "\/css\/_tables.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_tables.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_tables.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/partials\/_type.scss": {
+	"\/sass\/partials\/_type.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/_type.scss",
-		"outputAbbreviatedPath": "\/css\/_type.css",
+		"inputAbbreviatedPath": "\/sass\/partials\/_type.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_type.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
