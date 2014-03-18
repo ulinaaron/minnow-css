@@ -46,7 +46,5 @@ Icon
 # Ignore Mixture Files Files
 
 # Not sure if I want this in the project yet...
-config.codekit
-min/
-
+min
 node_modules
