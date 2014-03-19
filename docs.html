@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation - Minnow CSS</title>
+    <!-- Meta Data-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body><!--[if lt IE 8]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.
+    </p><![endif]-->
+    <div class="mw wrapper">
+      <!-- docs.intro -->
+      <div id="docs" class="intro mw row">
+        <div class="large-12 small-12">
+          <h1>Minnow CSS</h1>
+          <hr>
+        </div>
+      </div>
+      <!-- docs.intro -->
+      <!-- .docs.type -->
+      <div id="docs" class="type mw row">
+        <div class="small-12 large-12">
+          <h4>Typography</h4>
+          <div class="mw row">
+            <div class="large-6 small-12">
+              <h1>Heading One</h1>
+              <h2>Heading Two</h2>
+              <h3>Heading Three</h3>
+              <h4>Heading Four</h4>
+              <h5>Heading Five</h5>
+              <h6>Heading Six</h6>
+            </div>
+            <div class="large-6 small-12"><a href="#">
+                <h1>H1 Link</h1></a><a href="#">
+                <h2>H2 Link</h2></a><a href="#">
+                <h3>H3 Link</h3></a><a href="#">
+                <h4>H4 Link</h4></a><a href="#">
+                <h5>H5 Link</h5></a><a href="#">
+                <h6>H6 Link</h6></a></div>
+          </div>
+          <h4>List Styles</h4>
+          <div class="mw row">
+            <div class="large-6 small-12">
+              <h5>Unordered List</h5>
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                </li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+              <h5>Plain List</h5>
+              <ul class="plain">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ul>
+            </div>
+            <div class="large-6 small-12">
+              <h5>Ordered List</h5>
+              <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet
+                  <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ol>
+                </li>
+                <li>Lorem ipsum dolor sit amet</li>
+              </ol>
+              <h5>Inline List</h5>
+              <ul class="inline">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mw row">
+            <div class="large-6 small-12">
+              <h5>Definition List</h5>
+              <dl>
+                <dt>Definition Term</dt>
+                <dd>Definition Description</dd>
+                <dt>Definition Term</dt>
+                <dd>Definition Description</dd>
+                <dt>Definition Term</dt>
+                <dd>Definition Description</dd>
+              </dl>
+            </div>
+            <div class="large-6 small-12"></div>
+          </div>
+          <h4>Blockquotes</h4>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam, mollitia, est atque vero aspernatur voluptates error consectetur blanditiis unde voluptate perferendis distinctio obcaecati veniam rem in facere veritatis placeat delectus odit natus dolorum accusamus aperiam eligendi voluptatum laborum ut!
+            <cite>John Doe</cite>
+          </blockquote>
+        </div>
+      </div>
+      <!-- .docs.type -->
+      <!-- docs.buttons -->
+      <div id="docs" class="buttons mw row">
+        <div class="large-12 small-12">
+          <h4>Buttons</h4>
+          <h5>Button Styles</h5>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#" class="mw button">Button</a></td>
+                <td><code>.mw.button</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button primary">Primary</a></td>
+                <td><code>.mw.button.primary</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button secondary">Secondary</a></td>
+                <td><code>.mw.button.secondary</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button tertiary">Tertiary</a></td>
+                <td><code>.mw.button.tertiary</code></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>Button Sizes</h5>
+          <p>Minnow button sizes effect the padding and line-height. They do not alter the font size of the buttons. To change the font sizes use the<code>.font-size-*</code>classes.</p>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#" class="mw button micro">Button</a></td>
+                <td><code>.mw.button.micro</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button tiny">Button</a></td>
+                <td><code>.mw.button.tiny</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button small">Button</a></td>
+                <td><code>.mw.button.small</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button medium">Button</a></td>
+                <td><code>.mw.button.medium</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button large">Button</a></td>
+                <td><code>.mw.button.large</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button xl">Button</a></td>
+                <td><code>.mw.button.xl</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button xxl">Button</a></td>
+                <td><code>.mw.button.xxl</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button xxxl">Button</a></td>
+                <td><code>.mw.button.xxxl</code></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="#" class="mw button huge">Button</a></td>
+                <td><code>.mw.button.huge</code></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>Fluid Width Buttons</h5>
+          <p>Use<code>.mw.button.fluid</code>to make the button span the full-width of its container.</p><a href="#" class="mw button fluid">Fluid Button</a>
+        </div>
+      </div>
+      <!-- docs.buttons -->
+      <!-- .docs.segments -->
+      <div id="docs" class="segments mw row">
+        <div class="large-12 small-12">
+          <h4>Segments</h4>
+          <p>These are seperations of content, commonly referred to as panels.</p>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mw.segment</code></td>
+                <td>Add this class to a<code><div></code>element to define the segment component.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mw row">
+        <div class="large-12 small-12">
+          <div class="mw segment">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, enim, dolores nisi ratione velit quos officia molestiae adipisci fuga illo tempora aliquid nesciunt fugit consequatur asperiores inventore odit magni obcaecati optio pariatur. Nobis, quos, perspiciatis libero quam praesentium sapiente eligendi.</p>
+          </div>
+        </div>
+      </div>
+      <!-- .docs.segments -->
+      <!-- docs.forms -->
+      <div id="docs" class="forms mw row">
+        <div class="large-12 small-12">
+          <h4>Forms</h4>
+          <!-- Stacked Form -->
+          <h5> Stacked Forms</h5>
+          <form action="#" class="mw form-stacked">
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input id="name" type="text">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="password">
+            </div>
+            <div class="form-item">
+              <input type="submit">
+            </div>
+          </form>
+          <!-- Aligned Form -->
+          <h5> Aligned Form</h5>
+          <form action="#" class="mw form-aligned">
+            <div class="form-group">
+              <label for="name">Username</label>
+              <input id="name" type="text">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="password">
+            </div>
+            <div class="form-item">
+              <input type="submit" class="button">
+            </div>
+          </form>
+          <!-- Aligned Form -->
+        </div>
+      </div>
+      <!-- docs.forms -->
+      <!-- .docs.grid -->
+      <div id="docs" class="grid mw row">
+        <div class="large-12">
+          <h4>Grid</h4>
+          <p>The Minnow grid is small yet highly powerful. It is responsive and can be used in full-width fluid layouts. If you would like to have a fixed-width container you can use the<code>.mw.wrapper</code>classes.</p>Columns can also be nested but the inner-gutters will not be cleared automatically.
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mw.row</code></td>
+                <td>Add this class to a<code><div></code>element to define the row. Necessary for all columns.</td>
+              </tr>
+              <tr>
+                <td><code>.mw.row.gutterless</code></td>
+                <td>Clears the left and right padding on the first and last columns.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="demo-grid">
+        <div class="mw row">
+          <div class="large-6">
+            <div class="mw segment">Large 6</div>
+          </div>
+          <div class="large-6">
+            <div class="mw segment">Large 6</div>
+          </div>
+        </div>
+        <div class="mw row">
+          <div class="large-4">
+            <div class="mw segment">Large 4</div>
+          </div>
+          <div class="large-4">
+            <div class="mw segment">Large 4</div>
+          </div>
+          <div class="large-4">
+            <div class="mw segment">Large 4</div>
+          </div>
+        </div>
+        <div class="mw row">
+          <div class="large-3">
+            <div class="mw segment">Large 3</div>
+          </div>
+          <div class="large-3">
+            <div class="mw segment">Large 3</div>
+          </div>
+          <div class="large-3">
+            <div class="mw segment">Large 3</div>
+          </div>
+          <div class="large-3">
+            <div class="mw segment">Large 3</div>
+          </div>
+        </div>
+        <div class="mw row">
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+          <div class="large-2">
+            <div class="mw segment">Large 2</div>
+          </div>
+        </div>
+      </div>
+      <!-- .docs.grid -->
+      <!-- .docs.visibility -->
+      <div id="docs" class="visibility mw row">
+        <div class="large-12 small-12">
+          <h4>Visibility Classes</h4>
+          <p>Minnow comes packed with quite a few useful visibility classes.</p>
+          <h5>Show For Classes</h5>
+          <p>The<code>mw.show-for-*</code>classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Micro</th>
+                <th>Tiny</th>
+                <th>Small</th>
+                <th>Medium</th>
+                <th>Large</th>
+                <th>XL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mw.show-for-tiny</code></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-small</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-medium</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-large</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-xl</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>Show For Only</h5>
+          <p>The<code>.mw.show-for-*.only</code>classes are used to only show elements for the selected query.</p>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Micro</th>
+                <th>Tiny</th>
+                <th>Small</th>
+                <th>Medium</th>
+                <th>Large</th>
+                <th>XL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mw.show-for-micro.only</code></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-tiny.only</code></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-small.only</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-medium.only</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td>Hide</td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-large.only</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+              </tr>
+              <tr>
+                <td><code>.mw.show-for-xl.only</code></td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>Hide For</h5>
+          <p>Elements with the<code>.mw.hide-for-*</code>class will only be hidden for that select query.</p>
+          <p></p>
+          <table class="mw table fluid">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Micro</th>
+                <th>Tiny</th>
+                <th>Small</th>
+                <th>Medium</th>
+                <th>Large</th>
+                <th>XL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.mw.hide-for-micro</code></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.hide-for-tiny</code></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.hide-for-small</code></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.hide-for-medium</code></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.hide-for-large</code></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+                <td><strong>Show</strong></td>
+              </tr>
+              <tr>
+                <td><code>.mw.hide-for-xl</code></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td><strong>Show</strong></td>
+                <td>Hide</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- .docs.visibility -->
+    </div>
+  </body>
+</html>

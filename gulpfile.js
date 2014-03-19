@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    minifyCSS = require('gulp-minify-css')
+    minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename');
 
 // Minify CSS with .min.css
