@@ -1,0 +1,18 @@
+{
+    "name": "minnow-css",
+    "version": "0.0.9",
+    "homepage": "http://ulinaaron.github.io/minnow-css/",
+    "authors": [
+        "Aaron <aaron@aaronmazade.com>"
+    ],
+    "description": "Minnow is a small CSS framework meant for kick starting your next project.",
+    "main": "minnow.min.css",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "node_modules",
+        "bower_components",
+        "gulpfile.js",
+        "package.json"
+    ]
+}

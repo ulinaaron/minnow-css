@@ -91,6 +91,8 @@ body {
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .relative {
@@ -121,6 +123,7 @@ a {
   color: #8fa1b3;
   text-decoration: none;
   outline: none;
+  -webkit-transition: all .2s linear;
   transition: all .2s linear; }
   a:hover, a:focus {
     color: #596e83;
