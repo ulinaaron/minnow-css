@@ -8,7 +8,6 @@
     "description": "Minnow is a small CSS framework meant for kick starting your next project.",
     "main": "minnow.min.css",
     "license": "MIT",
-    "private": false,
     "ignore": [
         "node_modules",
         "bower_components",
