@@ -10,14 +10,6 @@
 // $ui-prefix: "mw-";
 
 
-// BASE
-// -------------------------
-
-// $base-font-size: 100%;
-// $base-font-family: sans-serif;
-// $base-line-height: 150%;
-// $base-rem: 16px;
-
 // THEME COLORS
 // -------------------------
 
@@ -38,26 +30,29 @@
 // $color-darker: 		#343d46;
 // $color-darkest: 		#2b303b;
 
-
-// TYPOGRAPHY
+// BASE
 // -------------------------
 
-// $font-size-tiny: 	10;
-// $font-size-small: 	12;
-// $font-size-medium: 	16;
-// $font-size-large: 	24;
-// $font-size-xl: 		32;
-// $font-size-xxl: 		48;
-// $font-size-xxxl: 	64;
-// $font-size-huge: 	96;
+// $base-font-precent: 	100%;
+// $base-line-height: 	1.5;
+// $base-rem:         	16px;
+// $base-font-size: 	$base-rem;
 
+// $base-font-family: 				'Oxygen', sans-serif;
+// $base-font-family-alternative: 	"Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-// DEVICE RESOLUTIONS
+// $base-font-color: 		$color-medium;
+// $base-fallback-px:  		true;
+// $base-background-color: 	#FFFFFF;
+
+// $base-radius: 	6px;
+// $base-oval: 		9999px;
+
+// $hr-value: 		1px solid $color-light;
+
+// LINKS
 // -------------------------
 
-// $device-micro:	240;
-// $device-tiny:	320;
-// $device-small:	480;
-// $device-medium:	768;
-// $device-large:	1024;
-// $device-xl:		1280;
+// $link-color: 		$color-primary;
+// $link-color-hover: 	darken($color-primary, 20);
+// $link-transitions: 	true;
