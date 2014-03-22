@@ -17,9 +17,12 @@ Version: 0.1.0
 //
 // This is where all settings should be changed.
 // Do not change the defaults in the individual partials.
+// 
+// For the sake of preserving your settings whenever you update
+// the variable files are labeled with their corresponding version.
 // --------------------------------------------------
 
-@import "variables";
+@import "variables_v010";
 
 // RESET
 // --------------------------------------------------
@@ -32,11 +35,3 @@ Version: 0.1.0
 // --------------------------------------------------
 
 @import "import";
-
-// CUSTOM
-//
-// If you need to make any customizations you should
-// do so within the custom.scss file.
-// --------------------------------------------------
-
-@import "custom";
