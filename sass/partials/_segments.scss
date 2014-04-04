@@ -33,7 +33,7 @@ $segment-color: $color-medium !default;
 // STYLE
 // --------------------------------------------------
 
-.#{$ui-prefix}.segment {
+.#{$ui-prefix}-segment {
 	@include segment();
 
 	*:first-child {

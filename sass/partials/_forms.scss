@@ -27,7 +27,7 @@ $form-item-offset: $form-item-group-label-width + $form-aligned-label-margin !de
 
 form.#{$ui-prefix} {}
 
-form.#{$ui-prefix}.form-stacked {
+form.#{$ui-prefix}-form-stacked {
 	
 	label,
 	input {
@@ -39,7 +39,7 @@ form.#{$ui-prefix}.form-stacked {
 	}
 }
 
-form.#{$ui-prefix}.form-aligned {
+form.#{$ui-prefix}-form-aligned {
 
 	label {
 		@include rem('width', $form-item-group-label-width);
@@ -68,7 +68,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-	@extend .#{$ui-prefix}.button;
+	@extend .#{$ui-prefix}-button;
 }
 
 // Form Items 
@@ -79,6 +79,6 @@ input[type="submit"] {
 	@include rem('margin-bottom', ms($form-base-size, 0));
 }
 
-form.#{$ui-prefix}.form-aligned .form-item {
+form.#{$ui-prefix}-form-aligned .form-item {
 	@include rem('margin-left', ms($form-item-offset, 0));
 }

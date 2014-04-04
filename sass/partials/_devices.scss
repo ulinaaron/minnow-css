@@ -56,76 +56,76 @@ $xl-up: "#{$screen} and (min-width: #{rem($device-xl)})" !default;
 
 		// Show
 		
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny, 		
-		.#{$ui-prefix}.#{$visibility-show-class}-small, 		
-		.#{$ui-prefix}.#{$visibility-show-class}-medium,	
-		.#{$ui-prefix}.#{$visibility-show-class}-large, 		
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny, 		
+		.#{$ui-prefix}-#{$visibility-show-class}-small, 		
+		.#{$ui-prefix}-#{$visibility-show-class}-medium,	
+		.#{$ui-prefix}-#{$visibility-show-class}-large, 		
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro 		{ display: none; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro 		{ display: none; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny, 		
-		.#{$ui-prefix}.#{$visibility-hide-class}-small, 		
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium, 	
-		.#{$ui-prefix}.#{$visibility-hide-class}-large, 		
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny, 		
+		.#{$ui-prefix}-#{$visibility-hide-class}-small, 		
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium, 	
+		.#{$ui-prefix}-#{$visibility-hide-class}-large, 		
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: inherit !important; }
 	}
 
 	@media #{$micro-only} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class} 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class} 	{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro.#{$visibility-only-class} 	{ display: none !important; }
 	}
 
 	@media #{$tiny-up} {
 		
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny 		{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-small,
-		.#{$ui-prefix}.#{$visibility-show-class}-medium,
-		.#{$ui-prefix}.#{$visibility-show-class}-large,
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-small,
+		.#{$ui-prefix}-#{$visibility-show-class}-medium,
+		.#{$ui-prefix}-#{$visibility-show-class}-large,
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny 		{ display: none !important; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-small,
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium,
-		.#{$ui-prefix}.#{$visibility-hide-class}-large,
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-small,
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium,
+		.#{$ui-prefix}-#{$visibility-hide-class}-large,
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: inherit !important; }
 	}
 
 	@media #{$tiny-only} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class} 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class} 	{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny.#{$visibility-only-class} 	{ display: none !important; }
 
 
 	}
@@ -134,96 +134,96 @@ $xl-up: "#{$screen} and (min-width: #{rem($device-xl)})" !default;
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-small 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-small 		{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-medium, 
-		.#{$ui-prefix}.#{$visibility-show-class}-large,	
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-medium, 
+		.#{$ui-prefix}-#{$visibility-show-class}-large,	
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-small 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-small 		{ display: none !important; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro,
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny,
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium,
-		.#{$ui-prefix}.#{$visibility-hide-class}-large,
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro,
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny,
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium,
+		.#{$ui-prefix}-#{$visibility-hide-class}-large,
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: inherit !important; }
 	}
 
 	@media #{$small-only} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class} 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class} 	{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-small.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-small.#{$visibility-only-class} 	{ display: none !important; }
 	}
 
 	@media #{$medium-up} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-medium 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-medium 	{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-large,
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-large,
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: none !important; }
 
 		// Hide
 		
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium 	{ display: none !important; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro,
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny,
-		.#{$ui-prefix}.#{$visibility-hide-class}-small,
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium,
-		.#{$ui-prefix}.#{$visibility-hide-class}-large,
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro,
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny,
+		.#{$ui-prefix}-#{$visibility-hide-class}-small,
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium,
+		.#{$ui-prefix}-#{$visibility-hide-class}-large,
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: inherit !important; }
 	}
 
 	@media #{$medium-only} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class} 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class} 	{ display: inherit !important; }
 
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium.#{$visibility-only-class} 	{ display: none !important; }
 	}
 
 	@media #{$large-up} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-large 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-large 		{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-large 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-large 		{ display: none !important; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro,
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny,
-		.#{$ui-prefix}.#{$visibility-hide-class}-small,
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium,
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro,
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny,
+		.#{$ui-prefix}-#{$visibility-hide-class}-small,
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium,
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: inherit !important; }
 
 
 	}
@@ -232,50 +232,50 @@ $xl-up: "#{$screen} and (min-width: #{rem($device-xl)})" !default;
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class} 	{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class} 	{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class} 	{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-large.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-large.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 	}
 
 	@media #{$xl-up} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-xl 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-xl 		{ display: inherit !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl 		{ display: none !important; }
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-micro,
-		.#{$ui-prefix}.#{$visibility-hide-class}-tiny,
-		.#{$ui-prefix}.#{$visibility-hide-class}-small,
-		.#{$ui-prefix}.#{$visibility-hide-class}-medium,
-		.#{$ui-prefix}.#{$visibility-hide-class}-large 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-micro,
+		.#{$ui-prefix}-#{$visibility-hide-class}-tiny,
+		.#{$ui-prefix}-#{$visibility-hide-class}-small,
+		.#{$ui-prefix}-#{$visibility-hide-class}-medium,
+		.#{$ui-prefix}-#{$visibility-hide-class}-large 		{ display: inherit !important; }
 	}
 
 	@media #{$xl-up} {
 
 		// Show
 
-		.#{$ui-prefix}.#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: inherit !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-xl.#{$visibility-only-class} 		{ display: inherit !important; }
 
-		.#{$ui-prefix}.#{$visibility-show-class}-micro.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-tiny.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-small.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-medium.#{$visibility-only-class},
-		.#{$ui-prefix}.#{$visibility-show-class}-large.#{$visibility-only-class} 	{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-show-class}-micro.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-tiny.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-small.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-medium.#{$visibility-only-class},
+		.#{$ui-prefix}-#{$visibility-show-class}-large.#{$visibility-only-class} 	{ display: none !important; }
 
 		// Hide
 
-		.#{$ui-prefix}.#{$visibility-hide-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
+		.#{$ui-prefix}-#{$visibility-hide-class}-xl.#{$visibility-only-class} 		{ display: none !important; }
 	}
 }

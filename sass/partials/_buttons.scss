@@ -30,7 +30,7 @@ $button-border-radius: $base-radius !default;
 // Colors
 // -------------------------
 
-.#{$ui-prefix}.button {
+.#{$ui-prefix}-button {
 	display: inline-block;
 	white-space: nowrap;
 	@include rem('padding', 0 ms($button-base-size, 1));
@@ -70,14 +70,14 @@ $button-border-radius: $base-radius !default;
 //
 // [1] Removes any potential width and padding conflicts
 
-.#{$ui-prefix}.button.fluid {
+.#{$ui-prefix}-button.fluid {
 	display: block;
 	width: 100%;
 	text-align: center;
 	padding: 0; // [1]
 }
 
-.#{$ui-prefix}.button {
+.#{$ui-prefix}-button {
 	&.micro  {
 		@include rem('padding', 0 ms($button-base-size, 0));
 		line-height: 2;
