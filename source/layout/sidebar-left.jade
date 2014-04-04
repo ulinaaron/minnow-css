@@ -14,5 +14,14 @@ html
 		include ../include/document_body_top
 
 		.mw-wrapper
-			//- Main Content Area
-			block content
+			.mw-row
+				.large-12
+					//- Header
+					block header
+			.mw-row
+				.large-3
+					//- Sidebar
+					block sidebar
+				.large-9
+					//- Main Content Area
+					block content

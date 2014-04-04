@@ -1,7 +1,11 @@
-extends layout/default
+extends layout/sidebar-left
 
 block head
 	title Documentation - Minnow CSS
+
+block header
+	h1 Minnow CSS
+	hr
 
 block content
 
@@ -12,3 +16,7 @@ block content
 	include include/docs/forms
 	include include/docs/grid
 	include include/docs/visibility
+	include include/docs/layouts
+
+block sidebar
+	include include/docs/sidebar
