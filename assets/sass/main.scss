@@ -10,6 +10,12 @@
 	background-image: url("../img/congruent_pentagon.png");
 }
 
+// Text Colors
+
+.text-light  { color: $color-lightest; }
+.text-medium { color: $color-medium; } 
+.text-dark   { color: $color-darkest; }
+
 // Header
 
 header.header {
@@ -25,6 +31,10 @@ header.header {
 		color: $color-lightest;
 		text-decoration: none;
 	}
+}
+
+.site-title.hero {
+	@include rem('margin-bottom', ms($base-font-size, 1));
 }
 
 // Footer

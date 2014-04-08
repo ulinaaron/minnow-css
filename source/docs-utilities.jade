@@ -5,12 +5,46 @@ block head
 
 block header
 
+	include include/document_body_top
+
 block content
 
 	// #docs-visibility 
 	#docs-visibility.mw-row
 		.large-12.small-12
 			h1 Utilities
+			table.mw-table.fluid
+				thead
+					tr
+						th Class
+						th Description
+				tbody
+					tr
+						td
+							code .float-left
+						td Pushes the element to the left.
+					tr
+						td
+							code .float-right
+						td Pushes the element to the right.
+					tr
+						td
+							code .align-left
+						td Aligns text to the left.
+					tr
+						td
+							code .align-right
+						td Aligns text to the right.
+					tr
+						td
+							code .align-center
+						td Centers the text alignment.
+					tr
+						td
+							code .align-justify
+						td Justifies the text alignment.
+
+
 			h4 Visibility Classes
 			p Minnow comes packed with quite a few useful visibility classes.
 			h5 Show For Classes

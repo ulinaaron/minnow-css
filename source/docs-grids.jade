@@ -4,6 +4,8 @@ block head
 	title Documentation - Minnow CSS
 
 block header
+	
+	include include/document_body_top
 
 block content
 
@@ -18,21 +20,21 @@ block content
 		| Columns can also be nested but the inner-gutters will not be cleared automatically.
 		table.mw-table.fluid
 			thead
-			tr
-				th Class
-				th Description
+				tr
+					th Class
+					th Description
 			tbody
-			tr
-				td
-					code .mw-row
-				td
-					| Add this class to a 
-					code= '<div>'
-					|  element to define the row. Necessary for all columns.
-			tr
-				td
-					code .mw-row.gutterless
-				td Clears the left and right padding on the first and last columns.
+				tr
+					td
+						code .mw-row
+					td
+						| Add this class to a 
+						code= '<div>'
+						|  element to define the row. Necessary for all columns.
+				tr
+					td
+						code .mw-row.gutterless
+					td Clears the left and right padding on the first and last columns.
 	.demo-grid
 		.mw-row
 		.large-6
