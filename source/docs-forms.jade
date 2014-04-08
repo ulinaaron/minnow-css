@@ -1,0 +1,40 @@
+extends layout/sidebar-left
+
+block head
+	title Documentation - Minnow CSS
+
+block header
+
+block content
+
+	// #docs-forms 
+	#docs-forms.mw-row
+		.large-12.small-12
+			h1 Forms
+			// Stacked Form 
+			h5  Stacked Forms
+			form.mw-form-stacked(action='#')
+				.form-group
+					label(for='name') Username
+					input#name(type='text')
+				.form-group
+					label(for='password') Password
+					input#password(type='password')
+				.form-item
+					input(type='submit')
+			// Aligned Form 
+			h5  Aligned Form
+			form.mw-form-aligned(action='#')
+				.form-group
+					label(for='name') Username
+					input#name(type='text')
+				.form-group
+					label(for='password') Password
+					input#password(type='password')
+				.form-item
+					input.button(type='submit')
+			// Aligned Form 
+	// #docs-forms 
+	
+block sidebar
+	include include/docs/sidebar

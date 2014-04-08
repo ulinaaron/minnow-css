@@ -1,1 +1,75 @@
 @import "sass/minnow";
+
+// Backgrounds
+
+%background-fixed {
+	background-attachment: fixed;
+}
+
+%background-pattern-1 {
+	background-image: url("../img/congruent_pentagon.png");
+}
+
+// Header
+
+header.header {
+	background-color: $color-darkest;
+	@extend %background-pattern-1;
+	@include rem('margin-bottom', ms($base-font-size, 1));
+	@include rem('padding', ms($base-font-size, 2) 0);
+}
+
+.site-title {
+	margin: 0;
+	a {
+		color: $color-lightest;
+		text-decoration: none;
+	}
+}
+
+// Footer
+footer.footer {
+	background-color: $color-tertiary;
+	@extend %background-pattern-1;
+	@include rem('margin-top', ms($base-font-size, 1));
+	@include rem('padding', ms($base-font-size, 2) 0);
+	color: $color-lightest;
+}
+
+.copyright {
+	margin: 0;
+}
+
+/* Menus */
+
+.#{$ui-prefix}-menu {
+	list-style-type: none;
+	padding: 0;
+}
+
+// Pills
+
+%pill-style {
+	text-decoration: none;
+	background: $color-primary;
+	color: $color-lightest;
+	border-radius: $base-radius;
+}
+
+.#{$ui-prefix}-menu.pill li a{
+	&:hover {
+		@extend %pill-style;
+	}
+}
+
+// Menu Stacked
+
+.#{$ui-prefix}-menu.stacked {
+	li {
+		position: relative;
+	}
+	li>a {
+		display: block;
+		@include rem('padding', 2px 10px);
+	}
+}
