@@ -12,9 +12,13 @@
 
 // Text Colors
 
-.text-light  { color: $color-lightest; }
-.text-medium { color: $color-medium; } 
-.text-dark   { color: $color-darkest; }
+.text-light  	{ color: $color-light; }
+.text-lighter   { color: $color-lighter; }
+.text-lightest  { color: $color-lightest; }
+.text-medium 	{ color: $color-medium; } 
+.text-dark   	{ color: $color-dark; }
+.text-darker   	{ color: $color-darker; }
+.text-darkest   { color: $color-darkest; }
 
 // Header
 
