@@ -1,0 +1,45 @@
+// * SEGMENTS *
+// --------------------------------------------------
+
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER
+// --------------------------------------------------
+
+$segment-base-size: $base-font-size !default;
+
+$segment-border-color: $color-light !default;
+$segment-background-color: $color-lightest !default;
+$segment-color: $color-medium !default;
+
+// MIXINS
+// --------------------------------------------------
+
+@mixin segment($bg: $segment-background-color, $border-color: $segment-border-color, $color: $segment-color, $border-radius: true) {
+	@include rem('padding', 10px);
+	@include rem('margin-bottom', ms($segment-base-size, -1));
+	display: block;
+	width: 100%;
+	border: 1px solid $border-color;
+	background-color: $bg;
+	color: $color;
+
+	@if $border-radius == true {
+		border-radius: $base-radius;
+	}
+}
+
+
+// STYLE
+// --------------------------------------------------
+
+.#{$ui-prefix}-segment {
+	@include segment();
+
+	*:first-child {
+		margin-top: 0;
+	}
+	*:last-child {
+		margin-bottom: 0;
+	}
+}

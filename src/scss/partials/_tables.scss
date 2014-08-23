@@ -1,0 +1,55 @@
+// * TABLES  *
+// --------------------------------------------------
+
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER
+// --------------------------------------------------
+
+$table-background: $color-lightest !default;
+$table-border: 1px solid $color-light !default;
+$table-td-border: 1px solid $color-lighter !default;
+$table-base-size: $base-font-size !default;
+
+// MIXINS
+// --------------------------------------------------
+
+// STYLE
+// --------------------------------------------------
+
+table {
+	max-width: 100%;
+}
+
+.#{$ui-prefix}-table {
+	display: table;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	border: $table-border;
+	@include rem('margin', ms($table-base-size, -1) 0);
+
+	&.fluid {
+		width: 100%;
+	}
+}
+
+.#{$ui-prefix}-table thead {
+	background: $table-background;
+	text-align: left;
+}
+
+.#{$ui-prefix}-table td,
+.#{$ui-prefix}-table th {
+	font-size: inherit;
+	margin: 0;
+	padding: 6px 12px;
+}
+
+.#{$ui-prefix}-table th {
+	font-weight: bold;
+}
+
+.#{$ui-prefix}-table td {
+	border-bottom: $table-td-border;
+}
