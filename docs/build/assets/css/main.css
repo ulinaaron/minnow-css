@@ -642,6 +642,20 @@ form.mw-form-aligned .form-item {
   .mw-segment *:last-child {
     margin-bottom: 0; }
 
+/*!
+School of Minnows
+An add-on to Minnow CSS of patterns and components.
+Copyright 2014 Aaron Mazade. All rights reserved.
+Licensed under the MIT License.
+Version: 0.1.0
+*/
+.mw-badge {
+  display: inline-block;
+  background-color: #343d46;
+  color: #eff1f5; }
+  .mw-badge:hover {
+    background-color: #090a0b; }
+
 header.header, footer.footer {
   background-image: url("../img/congruent_pentagon.png"); }
 

@@ -1,0 +1,23 @@
+/*!
+School of Minnows
+An add-on to Minnow CSS of patterns and components.
+Copyright 2014 Aaron Mazade. All rights reserved.
+Licensed under the MIT License.
+Version: 0.1.0
+*/
+
+// VARIABLES
+//
+// This is where all settings should be changed.
+// Do not change the defaults in the individual partials.
+//
+// For the sake of preserving your settings whenever you update
+// the variable files are labeled with their corresponding version.
+// --------------------------------------------------
+
+@import "variables";
+
+// IMPORT MODULES
+// --------------------------------------------------
+
+@import "modules/badges";

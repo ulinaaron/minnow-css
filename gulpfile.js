@@ -54,7 +54,7 @@ var gulp = require('gulp'),
  */
 
 gulp.task('src-styles', function () {
-    return gulp.src([dir_scss + '*.scss', '!' + dir_scss + '_*.scss'])
+    return gulp.src([dir_scss + '**/*.scss', '!' + dir_scss + '_*.scss'])
     .pipe(plugins.sass({
         errLogToConsole: true
     }))

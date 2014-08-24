@@ -1,0 +1,35 @@
+// * BADGES *
+// --------------------------------------------------
+
+// DEFAULT VARIABLES
+//
+// DO NOT ALTER
+// --------------------------------------------------
+$badge-color: $color-lightest !default;
+$badge-background-color: $color-darker !default;
+
+// FUNCTIONS
+// --------------------------------------------------
+
+
+// MIXINS
+// --------------------------------------------------
+
+@mixin badge-style($bg: $badge-background-color, $color: $badge-color ) {
+    background-color: $bg;
+    color: $color;
+    &:hover {
+        background-color: darken($bg, 20)
+    }
+}
+
+// STYLE
+// --------------------------------------------------
+
+
+.#{$ui-prefix}-badge {
+    display: inline-block;
+
+    @include badge-style();
+
+}
