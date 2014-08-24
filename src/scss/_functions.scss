@@ -12,7 +12,7 @@
 // Halves
 
 @function half($value) {
-	@return $value / 2;
+    @return $value / 2;
 }
 
 // Rem Calculator
@@ -20,8 +20,8 @@
 // Takes a pixel value and strips the units and multiples it by rems.
 
 @function rem($px) {
-	$value-divide: raw-unit($px) / raw-unit($base-rem);
-	@return #{$value-divide}rem;
+    $value-divide: raw-unit($px) / raw-unit($base-rem);
+    @return #{$value-divide}rem;
 }
 
 // Query Down
@@ -29,8 +29,8 @@
 // Takes the pixel value minus one and turns it into rems.
 
 @function query-down($value) {
-	$value-base: raw-unit($value) - 1;
-	@return rem($value-base);
+    $value-base: raw-unit($value) - 1;
+    @return rem($value-base);
 }
 
 
