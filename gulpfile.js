@@ -105,6 +105,22 @@ gulp.task('style-test', function() {
 });
 
 /**
+ * Task: Doc Images
+ * ========================
+ */
+
+gulp.task('doc-img', function () {
+    return gulp.src(dir_docs_src_img + '**/*')
+    .pipe(plugins.cache(plugins.imagemin({
+        optimizationLevel: 7,
+        progressive: true,
+        interlaced: true
+    })))
+    .pipe(gulp.dest(dir_docs_build_img))
+    .pipe(reload({stream:true, once:true}));
+});
+
+/**
  * Task: Clean
  * ========================
  */
@@ -150,7 +166,7 @@ gulp.task('bower-packages', function () {
 
 /**
  * Task: NPM Components
- * ================
+ * ================{pretty: true}
  * This is a manual process for components that should be included.
  * This function is not included in the default Gulp process.
  * Run 'gulp npm-packages' to use.
@@ -162,17 +178,6 @@ gulp.task('npm-packages', function () {
 });
 
 /**
- * Task: Deploy
- * ========================
- * Deployes to Github Pages
- */
-
-gulp.task('deploy', function() {
-    gulp.src(dir_docs_build + '**/*')
-    .pipe(deploy());
-});
-
-/**
  * Task: Jade
  * ========================
  * Compiles Jade to HTML
@@ -180,7 +185,10 @@ gulp.task('deploy', function() {
 
 gulp.task('jade', function() {
     gulp.src(dir_docs_src + '*.jade')
-    .pipe(plugins.jade())
+    .pipe(plugins.jade({
+        pretty: true
+    }))
+    .on('error', console.log)
     .pipe(gulp.dest(dir_docs_build))
     .pipe(reload({stream:true}));
 });
@@ -197,12 +205,25 @@ gulp.task('watch', function() {
         server: {
             baseDir: dev_dir
         },
-        open: false
+        open: false,
+        port: dev_port
     });
 
     gulp.watch(dir_scss + '**/*.scss', ['src-styles', 'doc-styles']);
     gulp.watch(dir_docs_src_scss + '**/*.scss', ['doc-styles']);
+    gulp.watch([dir_docs_src_img + '**/*', dir_docs_build_img + '**/*'], ['doc-img']);
     gulp.watch(dir_docs_src + '**/*.jade', ['jade']);
+});
+
+/**
+ * Task: Deploy
+ * ========================
+ * Deployes to Github Pages
+ */
+
+gulp.task('deploy', function() {
+    gulp.src(dir_docs_build + '**/*')
+    .pipe(deploy());
 });
 
 /**
@@ -210,4 +231,4 @@ gulp.task('watch', function() {
  * ========================
  */
 
-gulp.task('default', ['jade', 'src-styles', 'clean', 'watch']);
+gulp.task('default', ['jade', 'src-styles', 'doc-styles', 'doc-img', 'clean', 'watch']);
