@@ -18,38 +18,38 @@ $table-base-size: $base-font-size !default;
 // --------------------------------------------------
 
 table {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .#{$ui-prefix}-table {
-	display: table;
-	border-collapse: collapse;
-	border-spacing: 0;
-	empty-cells: show;
-	border: $table-border;
-	@include rem('margin', ms($table-base-size, -1) 0);
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: $table-border;
+    @include rem(margin, ms($table-base-size, -1) 0);
 
-	&.fluid {
-		width: 100%;
-	}
+    &.fluid {
+        width: 100%;
+    }
 }
 
 .#{$ui-prefix}-table thead {
-	background: $table-background;
-	text-align: left;
+    background: $table-background;
+    text-align: left;
 }
 
 .#{$ui-prefix}-table td,
 .#{$ui-prefix}-table th {
-	font-size: inherit;
-	margin: 0;
-	padding: 6px 12px;
+    font-size: inherit;
+    margin: 0;
+    padding: 6px 12px;
 }
 
 .#{$ui-prefix}-table th {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .#{$ui-prefix}-table td {
-	border-bottom: $table-td-border;
+    border-bottom: $table-td-border;
 }

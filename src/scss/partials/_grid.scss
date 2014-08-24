@@ -37,23 +37,23 @@ $grid-name-small: "small" !default;
 // It divides the current column number by the total number of columns.
 
 @function column-calc( $column, $total-columns: $grid-column-amount ) {
-	@return ( ($column / $total-columns) * 100% );
+    @return ( ($column / $total-columns) * 100% );
 }
 
 // MIXINS
 // --------------------------------------------------
 
 @mixin row() {
-	@include group;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+    @include group;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 @mixin row-nested() {
-	clear: none;
-	float: left;
-	margin: 0 !important;
+    clear: none;
+    float: left;
+    margin: 0 !important;
 }
 
 
@@ -66,14 +66,14 @@ $grid-name-small: "small" !default;
 // Without using a wrapper the grid will default to full-width
 
 .#{$ui-prefix}-#{$grid-prefix-wrapper} {
-	@include rem('padding', 0 $grid-wrapper-gutter);
-	margin: 0 auto;
-	width: rem($grid-wrapper-width);
-	background-color: $grid-wrapper-background;
+    @include rem(padding, 0 $grid-wrapper-gutter);
+    margin: 0 auto;
+    width: rem($grid-wrapper-width);
+    background-color: $grid-wrapper-background;
 
-	@media #{$large-down} {
-		width: 100%;
-	}
+    @media #{$large-down} {
+        width: 100%;
+    }
 }
 
 
@@ -81,12 +81,12 @@ $grid-name-small: "small" !default;
 // -------------------------
 
 .#{$ui-prefix}-#{$grid-prefix-row} {
-	@include row;
+    @include row;
 
-	// Nested Row
-	> .#{$ui-prefix}#{$grid-prefix-row} {
-		@include row-nested;
-	}
+    // Nested Row
+    > .#{$ui-prefix}#{$grid-prefix-row} {
+        @include row-nested;
+    }
 }
 
 
@@ -99,18 +99,18 @@ $grid-name-small: "small" !default;
 
 .#{$ui-prefix}-#{$grid-prefix-row} [class *= "#{$grid-name-large}-"],
 .#{$ui-prefix}-#{$grid-prefix-row} [class *= "#{$grid-name-small}-"] {
-	float: left;
-	padding: 0 1.5%;
+    float: left;
+    padding: 0 1.5%;
 }
 
 .#{$ui-prefix}-#{$grid-prefix-row}.gutterless [class *= "#{$grid-name-large}-"],
 .#{$ui-prefix}-#{$grid-prefix-row}.gutterless [class *= "#{$grid-name-small}-"] {
-	&:first-child {
-		padding-left: 0;
-	}
-	&:last-child {
-		padding-right: 0;
-	}
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 // Large Grid
@@ -123,9 +123,9 @@ $grid-name-small: "small" !default;
 
 // Small Grid
 @media #{$small-down} {
-	@for $i from 1 through $grid-column-amount {
-	  .#{$grid-name-small}-#{$i} {
-	  	width: column-calc($i);
-	  }
-	}
+    @for $i from 1 through $grid-column-amount {
+      .#{$grid-name-small}-#{$i} {
+      	width: column-calc($i);
+      }
+    }
 }

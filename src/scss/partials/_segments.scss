@@ -16,17 +16,17 @@ $segment-color: $color-medium !default;
 // --------------------------------------------------
 
 @mixin segment($bg: $segment-background-color, $border-color: $segment-border-color, $color: $segment-color, $border-radius: true) {
-	@include rem('padding', 10px);
-	@include rem('margin-bottom', ms($segment-base-size, -1));
-	display: block;
-	width: 100%;
-	border: 1px solid $border-color;
-	background-color: $bg;
-	color: $color;
+    @include rem(padding, 10px);
+    @include rem(margin-bottom, ms($segment-base-size, -1));
+    display: block;
+    width: 100%;
+    border: 1px solid $border-color;
+    background-color: $bg;
+    color: $color;
 
-	@if $border-radius == true {
-		border-radius: $base-radius;
-	}
+    @if $border-radius == true {
+        border-radius: $base-radius;
+    }
 }
 
 
@@ -34,12 +34,12 @@ $segment-color: $color-medium !default;
 // --------------------------------------------------
 
 .#{$ui-prefix}-segment {
-	@include segment();
+    @include segment();
 
-	*:first-child {
-		margin-top: 0;
-	}
-	*:last-child {
-		margin-bottom: 0;
-	}
+    *:first-child {
+        margin-top: 0;
+    }
+    *:last-child {
+        margin-bottom: 0;
+    }
 }
