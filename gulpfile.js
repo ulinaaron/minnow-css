@@ -1,4 +1,14 @@
 /**
+ *
+ * Minnow CSS
+ *
+ * Copyright (c) 2014 Aaron Mazade.
+ *
+ * MIT License
+ *
+ */
+
+/**
  * Setup
  * ========================
  */
@@ -23,7 +33,7 @@ var dir_scss                    = 'src/scss/',
     dir_docs_build_js           = 'docs/build/assets/js/',
     dir_docs_build_img          = 'docs/build/assets/img/',
     // Misc
-    dir_bower                   = 'src/bower_components/',
+    dir_bower                   = 'bower_components/',
     dir_npm                     = 'node_modules/',
     js_final                    = 'main', // JS final name of all the combined JS files
     // Browser Sync Settings

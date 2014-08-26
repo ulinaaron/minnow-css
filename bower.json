@@ -13,5 +13,8 @@
         "bower_components",
         "gulpfile.js",
         "package.json"
-    ]
+    ],
+    "dependencies": {
+        "normalize.css": "latest"
+    }
 }

@@ -24,10 +24,13 @@ Version: 0.1.0
 
 @import "variables_v010";
 
-// RESET
+// Normalize
+//
+// This pulls Normalize from the vendor folder.
+// This can be updated using the Gulp task, 'gulp bower-packages.'
 // --------------------------------------------------
 
-@import "reset";
+@import "vendor/base_normalize";
 
 // IMPORT
 //
