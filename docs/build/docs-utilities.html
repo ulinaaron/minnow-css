@@ -1,310 +1,317 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Documentation - Minnow CSS</title>
-    <!-- Meta Data-->
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Styles-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
-  </head>
-  <body><!--[if lt IE 8]>
-    <p class="browsehappy">
-      You are using an <strong>outdated</strong> browser.
-      Please <a href="http://browsehappy.com/">upgrade your browser</a>
-      to improve your experience.
-    </p><![endif]-->
-    <!-- Site Header-->
-    <header class="header">
-      <div class="mw-wrapper">
-        <div class="mw-row">
-          <div class="small-12">
-            <h1 class="site-title"><a href="index.html">Minnow CSS</a></h1>
-          </div>
-        </div>
-      </div>
-    </header>
+    <head>
+        <title>Home - Minnow CSS</title>
+        <!-- Meta Data-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Styles-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
+    </head>
+    <body>
+
+
+<!--[if lt IE 8]>
+<p class="browsehappy">
+You are using an <strong>outdated</strong> browser.
+Please <a href="http://browsehappy.com/">upgrade your browser</a>
+to improve your experience.
+</p><![endif]-->
+<!-- Site Header-->
+<header class="header">
     <div class="mw-wrapper">
-      <div class="mw-row">
+        <div class="mw-row">
+            <div class="small-12">
+                <h1 class="site-title"><a href="index.html">Minnow CSS</a></h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="mw-wrapper">
+    <div class="mw-row">
         <div class="large-3">
-          <ul class="mw-menu stacked pill">
-            <li><a href="docs.html">Getting Started</a></li>
-            <li><a href="docs-typography.html">Typography</a></li>
-            <li><a href="docs-buttons.html">Buttons</a></li>
-            <li><a href="docs-segments.html">Segments</a></li>
-            <li><a href="docs-forms.html">Forms</a></li>
-            <li><a href="docs-grids.html">Grids</a></li>
-            <li><a href="docs-utilities.html">Utilities</a></li>
-            <li><a href="docs-extras.html">Extras</a></li>
-          </ul>
+            <ul class="mw-menu stacked pill">
+    <li><a href="docs.html">Getting Started</a></li>
+    <li><a href="docs-typography.html">Typography</a></li>
+    <li><a href="docs-buttons.html">Buttons</a></li>
+    <li><a href="docs-segments.html">Segments</a></li>
+    <li><a href="docs-forms.html">Forms</a></li>
+    <li><a href="docs-grids.html">Grids</a></li>
+    <li><a href="docs-utilities.html">Utilities</a></li>
+</ul>
+
         </div>
         <div class="large-9">
-          <!-- #docs-visibility-->
-          <div id="docs-visibility" class="mw-row">
-            <div class="large-12 small-12">
-              <h1>Utilities</h1>
-              <table class="mw-table fluid">
-                <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>.float-left</code></td>
-                    <td>Pushes the element to the left.</td>
-                  </tr>
-                  <tr>
-                    <td><code>.float-right</code></td>
-                    <td>Pushes the element to the right.</td>
-                  </tr>
-                  <tr>
-                    <td><code>.align-left</code></td>
-                    <td>Aligns text to the left.</td>
-                  </tr>
-                  <tr>
-                    <td><code>.align-right</code></td>
-                    <td>Aligns text to the right.</td>
-                  </tr>
-                  <tr>
-                    <td><code>.align-center</code></td>
-                    <td>Centers the text alignment.</td>
-                  </tr>
-                  <tr>
-                    <td><code>.align-justify</code></td>
-                    <td>Justifies the text alignment.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4>Visibility Classes</h4>
-              <p>Minnow comes packed with quite a few useful visibility classes.</p>
-              <h5>Show For Classes</h5>
-              <p>The<code>mw-show-for-*</code>classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
-              <table class="mw-table fluid">
-                <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Micro</th>
-                    <th>Tiny</th>
-                    <th>Small</th>
-                    <th>Medium</th>
-                    <th>Large</th>
-                    <th>XL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>.mw-show-for-tiny</code></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-small</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-medium</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-large</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-xl</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5>Show For Only</h5>
-              <p>The<code>.mw-show-for-*.only</code>classes are used to only show elements for the selected query.</p>
-              <table class="mw-table fluid">
-                <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Micro</th>
-                    <th>Tiny</th>
-                    <th>Small</th>
-                    <th>Medium</th>
-                    <th>Large</th>
-                    <th>XL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>.mw-show-for-micro.only</code></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-tiny.only</code></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-small.only</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-medium.only</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-large.only</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-show-for-xl.only</code></td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5>Hide For</h5>
-              <p>Elements with the<code>.mw-hide-for-*</code>class will only be hidden for that select query.</p>
-              <p></p>
-              <table class="mw-table fluid">
-                <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Micro</th>
-                    <th>Tiny</th>
-                    <th>Small</th>
-                    <th>Medium</th>
-                    <th>Large</th>
-                    <th>XL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>.mw-hide-for-micro</code></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-hide-for-tiny</code></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-hide-for-small</code></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-hide-for-medium</code></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-hide-for-large</code></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                    <td><strong>Show</strong></td>
-                  </tr>
-                  <tr>
-                    <td><code>.mw-hide-for-xl</code></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td><strong>Show</strong></td>
-                    <td>Hide</td>
-                  </tr>
-                </tbody>
-              </table>
+            <!-- #docs-visibility-->
+            <div id="docs-visibility" class="mw-row">
+                <div class="large-12 small-12">
+                    <h1>Utilities</h1>
+                    <table class="mw-table fluid">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>.float-left</code></td>
+                                <td>Pushes the element to the left.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.float-right</code></td>
+                                <td>Pushes the element to the right.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-left</code></td>
+                                <td>Aligns text to the left.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-right</code></td>
+                                <td>Aligns text to the right.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-center</code></td>
+                                <td>Centers the text alignment.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-justify</code></td>
+                                <td>Justifies the text alignment.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Visibility Classes</h4>
+                    <p>Minnow comes packed with quite a few useful visibility classes.</p>
+                    <h5>Show For Classes</h5>
+                    <p>The<code>mw-show-for-*</code>classes are used to hide elements from lower query sizes. All query sizes above will be visible.</p>
+                    <table class="mw-table fluid">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Micro</th>
+                                <th>Tiny</th>
+                                <th>Small</th>
+                                <th>Medium</th>
+                                <th>Large</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>.mw-show-for-tiny</code></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-small</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-medium</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-large</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-xl</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5>Show For Only</h5>
+                    <p>The<code>.mw-show-for-*.only</code>classes are used to only show elements for the selected query.</p>
+                    <table class="mw-table fluid">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Micro</th>
+                                <th>Tiny</th>
+                                <th>Small</th>
+                                <th>Medium</th>
+                                <th>Large</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>.mw-show-for-micro.only</code></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-tiny.only</code></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-small.only</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-medium.only</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-large.only</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-show-for-xl.only</code></td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5>Hide For</h5>
+                    <p>Elements with the<code>.mw-hide-for-*</code>class will only be hidden for that select query.</p>
+                    <p></p>
+                    <table class="mw-table fluid">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Micro</th>
+                                <th>Tiny</th>
+                                <th>Small</th>
+                                <th>Medium</th>
+                                <th>Large</th>
+                                <th>XL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>.mw-hide-for-micro</code></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-hide-for-tiny</code></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-hide-for-small</code></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-hide-for-medium</code></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-hide-for-large</code></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                                <td><strong>Show</strong></td>
+                            </tr>
+                            <tr>
+                                <td><code>.mw-hide-for-xl</code></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td><strong>Show</strong></td>
+                                <td>Hide</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-          </div>
-          <!-- #docs-visibility-->
-          
+            <!-- #docs-visibility-->
+
         </div>
-      </div>
     </div>
-    <footer class="footer">
-      <div class="mw-wrapper">
+</div>
+
+<footer class="footer">
+    <div class="mw-wrapper">
         <div class="mw-row">
-          <div class="small-12 large-8">
-            <p class="copyright">Created and maintained by Aaron Mazade.</p>
-          </div>
-          <div class="small-12 large-4">
-            <iframe src="http://ghbtns.com/github-btn.html?user=ulinaaron&amp;repo=minnow-css&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-          </div>
+            <div class="small-12 large-8">
+                <p class="copyright">Created and maintained by Aaron Mazade.</p>
+            </div>
+            <div class="small-12 large-4">
+                <iframe src="http://ghbtns.com/github-btn.html?user=ulinaaron&amp;repo=minnow-css&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>
+
