@@ -41,7 +41,6 @@ var gulp = require('gulp'),
     plugins = require('gulp-load-plugins')({
         camelize: true
     }),
-    deploy = require('gulp-gh-pages'),
     merge = require('merge-stream'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
@@ -58,7 +57,7 @@ gulp.task('src-styles', function () {
     .pipe(plugins.sass({
         errLogToConsole: true
     }))
-    .pipe(plugins.autoprefixer('last 2 versions', 'ie 9', 'ios 6', 'android 4'))
+    .pipe(plugins.autoprefixer('last 2 versions','> 1%','ie 8'))
     .pipe(plugins.bless())
     .pipe(gulp.dest(dir_css))
     .pipe(reload({stream:true}))
@@ -178,17 +177,17 @@ gulp.task('npm-packages', function () {
 });
 
 /**
- * Task: Jade
+ * Task: Compiles HTML
  * ========================
- * Compiles Jade to HTML
+ * Compiles HTML files with includes
  */
 
-gulp.task('jade', function() {
-    gulp.src(dir_docs_src + '*.jade')
-    .pipe(plugins.jade({
-        pretty: true
+gulp.task('html', function() {
+    gulp.src([dir_docs_src + '**/*.html', '!' + dir_docs_src + '**/_*.html'])
+    .pipe(plugins.fileInclude({
+        prefix: '@@',
+        basepath: '@file'
     }))
-    .on('error', console.log)
     .pipe(gulp.dest(dir_docs_build))
     .pipe(reload({stream:true}));
 });
@@ -212,7 +211,7 @@ gulp.task('watch', function() {
     gulp.watch(dir_scss + '**/*.scss', ['src-styles', 'doc-styles']);
     gulp.watch(dir_docs_src_scss + '**/*.scss', ['doc-styles']);
     gulp.watch([dir_docs_src_img + '**/*', dir_docs_build_img + '**/*'], ['doc-img']);
-    gulp.watch(dir_docs_src + '**/*.jade', ['jade']);
+    gulp.watch(dir_docs_src + '**/*.html', ['html']);
 });
 
 /**
@@ -223,7 +222,7 @@ gulp.task('watch', function() {
 
 gulp.task('deploy', function() {
     gulp.src(dir_docs_build + '**/*')
-    .pipe(deploy());
+    .pipe(plugins.ghPages());
 });
 
 /**
@@ -231,4 +230,4 @@ gulp.task('deploy', function() {
  * ========================
  */
 
-gulp.task('default', ['jade', 'src-styles', 'doc-styles', 'doc-img', 'clean', 'watch']);
+gulp.task('default', ['html', 'src-styles', 'doc-styles', 'doc-img', 'clean', 'watch']);
