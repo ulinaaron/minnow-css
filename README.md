@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ulinaaron/minnow-css.svg?branch=develop)](https://travis-ci.org/ulinaaron/minnow-css)
+
 # Minnow CSS
 
 Minnow is a teeny tiny CSS framework for kickstarting your next project. It is meant for developers who do not want everything (and then some) created for them. Instead you will be given a solid foundation you carry with you from project to project.
