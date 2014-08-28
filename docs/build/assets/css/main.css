@@ -649,12 +649,26 @@ Copyright 2014 Aaron Mazade. All rights reserved.
 Licensed under the MIT License.
 Version: 0.1.0
 */
-.mw-badge {
-  display: inline-block;
-  background-color: #343d46;
-  color: #dfe1e8; }
-  .mw-badge:hover {
-    background-color: #090a0b; }
+.mw-button.success, input.success[type="submit"] {
+  background-color: #a3be8c;
+  color: #eff1f5; }
+  .mw-button.success:hover, input.success[type="submit"]:hover {
+    background-color: #709252; }
+.mw-button.info, input.info[type="submit"] {
+  background-color: #96b5b4;
+  color: #eff1f5; }
+  .mw-button.info:hover, input.info[type="submit"]:hover {
+    background-color: #5f8685; }
+.mw-button.warning, input.warning[type="submit"] {
+  background-color: #d08770;
+  color: #eff1f5; }
+  .mw-button.warning:hover, input.warning[type="submit"]:hover {
+    background-color: #a45036; }
+.mw-button.alert, input.alert[type="submit"] {
+  background-color: #bf616a;
+  color: #eff1f5; }
+  .mw-button.alert:hover, input.alert[type="submit"]:hover {
+    background-color: #84363d; }
 
 header.header, footer.footer {
   background-image: url("../img/congruent_pentagon.png"); }

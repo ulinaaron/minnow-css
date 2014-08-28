@@ -17,3 +17,10 @@
 
 // STYLE
 // --------------------------------------------------
+
+.#{$ui-prefix}-button {
+    &.success 	{ @include button-style($color-success); }
+    &.info  { @include button-style($color-info); }
+    &.warning { @include button-style($color-warning); }
+    &.alert  { @include button-style($color-alert); }
+}
