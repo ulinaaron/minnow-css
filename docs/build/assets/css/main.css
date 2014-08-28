@@ -956,8 +956,8 @@ header.header, footer.footer {
 
 header.header {
   background-color: #2b303b;
-  margin-bottom: 25.888px;
-  margin-bottom: 1.618rem;
+  margin-bottom: 41.88678px;
+  margin-bottom: 2.61792rem;
   padding: 41.88678px 0;
   padding: 2.61792rem 0; }
 
@@ -973,10 +973,10 @@ header.header {
 
 footer.footer {
   background-color: #ab7967;
-  margin-top: 25.888px;
-  margin-top: 1.618rem;
-  padding: 41.88678px 0;
-  padding: 2.61792rem 0;
+  margin-top: 67.77282px;
+  margin-top: 4.2358rem;
+  padding: 67.77282px 0;
+  padding: 4.2358rem 0;
   color: #eff1f5; }
 
 .copyright {
@@ -999,3 +999,11 @@ footer.footer {
   display: block;
   padding: 2px 10px;
   padding: 0.125rem 0.625rem; }
+
+/**
+ * Titles
+ */
+.highlight-title {
+  padding: 8px;
+  padding: 0.5rem;
+  border-bottom: 1px dashed #65737e; }
