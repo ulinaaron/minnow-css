@@ -4,32 +4,32 @@
  */
 
     // Source
-var dir_scss                    = 'src/scss/',
-    dir_scss_vendor             = 'src/scss/vendor/',
-    dir_css                     = 'src/css/',
+var dir_scss                   = 'src/scss/',
+    dir_scss_vendor            = 'src/scss/vendor/',
+    dir_css                    = 'src/css/',
     // Docs Setup
-    dir_docs                    = 'docs/',
-    dir_docs_src                = 'docs/src/',
-    dir_docs_build              = 'docs/build/',
+    dir_docs                   = 'docs/',
+    dir_docs_src               = 'docs/src/',
+    dir_docs_build             = 'docs/build/',
     // Docs Source
-    dir_docs_src_assets         = 'docs/src/assets/',
-    dir_docs_src_scss           = 'docs/src/assets/scss/',
-    dir_docs_src_js             = 'docs/src/assets/js/',
-    dir_docs_src_js_standalone  = 'docs/src/assets/js/standalone/',
-    dir_docs_src_js_plug        = 'docs/src/assets/js/plugins/',
-    dir_docs_src_img            = 'docs/src/assets/img/',
+    dir_docs_src_assets        = 'docs/src/assets/',
+    dir_docs_src_scss          = 'docs/src/assets/scss/',
+    dir_docs_src_js            = 'docs/src/assets/js/',
+    dir_docs_src_js_standalone = 'docs/src/assets/js/standalone/',
+    dir_docs_src_js_plug       = 'docs/src/assets/js/plugins/',
+    dir_docs_src_img           = 'docs/src/assets/img/',
     // Docs Build
-    dir_docs_build_css          = 'docs/build/assets/css/',
-    dir_docs_build_js           = 'docs/build/assets/js/',
-    dir_docs_build_img          = 'docs/build/assets/img/',
+    dir_docs_build_css         = 'docs/build/assets/css/',
+    dir_docs_build_js          = 'docs/build/assets/js/',
+    dir_docs_build_img         = 'docs/build/assets/img/',
     // Misc
-    dir_bower                   = 'src/bower_components/',
-    dir_npm                     = 'node_modules/',
-    js_final                    = 'main', // JS final name of all the combined JS files
+    dir_bower                  = 'src/bower_components/',
+    dir_npm                    = 'node_modules/',
+    js_final                   = 'main', // JS final name of all the combined JS files
     // Browser Sync Settings
-    dev_port                    = '7280',
-    dev_dir                     = dir_docs_build
-;
+    dev_port                   = '7280',
+    dev_dir                    = dir_docs_build
+    ;
 
 /**
  * Initialize

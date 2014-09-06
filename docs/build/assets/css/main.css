@@ -669,6 +669,10 @@ Version: 0.1.0
   color: #eff1f5; }
   .mw-button.alert:hover, input.alert[type="submit"]:hover {
     background-color: #84363d; }
+.mw-button.outline.success, input.outline.success[type="submit"] {
+  background-color: transparent;
+  border: 3px #a3be8c solid;
+  color: #a3be8c; }
 
 header.header, footer.footer {
   background-image: url("../img/congruent_pentagon.png"); }

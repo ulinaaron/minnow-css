@@ -6,6 +6,13 @@
 // DO NOT ALTER
 // --------------------------------------------------
 
+$all-button-styles: (
+	primary: $color-primary,
+	secondary: $color-secondary,
+	tertiary: $color-tertiary,
+	success: $color-success,
+);
+
 
 // FUNCTIONS
 // --------------------------------------------------
@@ -14,13 +21,29 @@
 // MIXINS
 // --------------------------------------------------
 
+@mixin button-outline($color: $color-primary, $border-thickness: 3px) {
+	background-color: transparent;
+	border: $border-thickness $color solid;
+	color: $color;
+}
+
 
 // STYLE
 // --------------------------------------------------
 
 .#{$ui-prefix}-button {
     &.success 	{ @include button-style($color-success); }
-    &.info  { @include button-style($color-info); }
-    &.warning { @include button-style($color-warning); }
-    &.alert  { @include button-style($color-alert); }
+    &.info      { @include button-style($color-info); }
+    &.warning   { @include button-style($color-warning); }
+    &.alert     { @include button-style($color-alert); }
+
+    &.outline {
+    	@include button-outline;
+    }
+
+    @each ($style, $color in list($all-button-styles)) {
+        &.outline.#{$style} {
+            @include button-outline($color);
+        }
+    }
 }
