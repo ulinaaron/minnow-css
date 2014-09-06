@@ -9,15 +9,15 @@
 // FONT SIZES
 // -------------------------
 
-$font-size-micro: 	ms(10px) !default;
-$font-size-tiny: 	ms(12px) !default;
-$font-size-small: 	ms(14px) !default;
-$font-size-medium: 	ms($base-font-size) !default;
-$font-size-large: 	ms(18px) !default;
-$font-size-xl: 		ms(20px) !default;
-$font-size-xxl: 	ms(22px) !default;
-$font-size-xxxl: 	ms(26px) !default;
-$font-size-huge: 	ms(32px) !default;
+$font-size-micro: 	10px !default;
+$font-size-tiny: 	12px !default;
+$font-size-small: 	14px !default;
+$font-size-medium: 	16px !default;
+$font-size-large: 	18px !default;
+$font-size-xl: 		20px !default;
+$font-size-xxl: 	22px !default;
+$font-size-xxxl: 	26px !default;
+$font-size-huge: 	32px !default;
 
 
 // HEADINGS
@@ -67,19 +67,9 @@ h1,
     @include rem(font-size, $font-size-huge);
 }
 
-h1 {
-    @include rem(margin-top, ms(half($font-size-huge), 2));
-    @include rem(margin-bottom, ms(half($font-size-huge), 0));
-}
-
 h2,
 .font-size-xxxl {
     @include rem(font-size, $font-size-xxxl);
-}
-
-h2 {
-    @include rem(margin-top, ms(half($font-size-xxxl), 2));
-    @include rem(margin-bottom, ms(half($font-size-xxxl), 0));
 }
 
 h3,
@@ -87,19 +77,9 @@ h3,
     @include rem(font-size, $font-size-xxl);
 }
 
-h3 {
-    @include rem(margin-top, ms(half($font-size-xxl), 2));
-    @include rem(margin-bottom, ms(half($font-size-xxl), 0));
-}
-
 h4,
 .font-size-xl {
     @include rem(font-size, $font-size-xl);
-}
-
-h4 {
-    @include rem(margin-top, ms(half($font-size-xl), 2));
-    @include rem(margin-bottom, ms(half($font-size-xl), 0));
 }
 
 h5,
@@ -107,19 +87,9 @@ h5,
     @include rem(font-size, $font-size-large);
 }
 
-h5 {
-    @include rem(margin-top, ms(half($font-size-large), 2));
-    @include rem(margin-bottom, ms(half($font-size-large), 1));
-}
-
 h6,
 .font-size-medium {
     @include rem(font-size, $font-size-medium);
-}
-
-h6 {
-    @include rem(margin-top, ms(half($font-size-medium), 2));
-    @include rem(margin-bottom, ms(half($font-size-medium), 1));
 }
 
 .font-size-small {
