@@ -12,7 +12,7 @@ $ui-prefix:         "mw" !default;
 // -------------------------
 
 $color-primary: 		#8fa1b3 !default;
-$color-secondary: 	     #b48ead !default;
+$color-secondary: 	#b48ead !default;
 $color-tertiary: 		#ab7967 !default;
 
 $color-success: 		#a3be8c !default;
@@ -35,7 +35,7 @@ $base-font-precent: 100% !default;
 $base-line-height: 	1.5 !default;
 $base-rem:          16px !default;
 $base-font-size: 		$base-rem !default;
-$base-font-family: 	'Oxygen', sans-serif !default;
+$base-font-family: 	'Lato', sans-serif !default;
 $base-font-family-alternative: "Palatino Linotype", "Book Antiqua", Palatino, serif !default;
 $base-font-color: 	$color-medium !default;
 $base-fallback-px:  true !default;
@@ -143,9 +143,9 @@ html {
 }
 
 body {
-    background-color: $base-background-color;
-    font-family: $base-font-family;
-    color: $base-font-color;
+  background-color: $base-background-color;
+  font-family: $base-font-family;
+  color: $base-font-color;
   line-height: $base-line-height;
 }
 
@@ -178,6 +178,18 @@ body {
 .align-right    { text-align: right; }
 .align-center   { text-align: center; }
 .align-justify  { text-align: justify; }
+
+// Alignmets for border-image-source: 
+
+img.align-left {
+  float: left;
+  @include rem(margin, 0 10px 10px 0);
+}
+
+img.align-right {
+  float: right;
+  @include rem(margin, 0 0 10px 10px);
+}
 
 
 // Links

@@ -19,7 +19,7 @@ $device-xl:		1280px !default;	// 1280px
 //
 // Determines whether or not to include show/hide classes.
 
-$visibility: true !default;
+$visibility: false !default;
 
 $visibility-show-class: "show-for" !default;
 $visibility-hide-class: "hide-for" !default;
