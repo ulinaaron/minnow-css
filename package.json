@@ -25,6 +25,7 @@
     "gulp-rename": "^1.1.0",
     "gulp-rimraf": "^0.1.0",
     "gulp-sass": "^0.7.2",
+    "gulp-stylestats": "^0.2.7",
     "gulp-uglify": "^0.2.1",
     "gulp-util": "^2.2.20",
     "merge-stream": "^0.1.5"

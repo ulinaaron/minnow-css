@@ -106,11 +106,13 @@ gulp.task('doc-styles', function () {
 });
 
 /**
- * Task: Style Testing
+ * Task: StyleStats
  * ========================
  */
 
-gulp.task('style-test', function() {
+gulp.task('stylestats', function() {
+    gulp.src(dir_css + '*.css')
+    .pipe(plugins.stylestats());
 });
 
 /**
