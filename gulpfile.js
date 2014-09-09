@@ -107,13 +107,19 @@ gulp.task('doc-styles', function () {
 
 /**
  * Task: StyleStats
+ * REQUIREMENT: StyleStats must be installed globally to use
+ * "npm install -g stylestats"
+ *
+ * Usage: This will gulp-shell to run a command trigging stylestats.
  * ========================
  */
 
-gulp.task('stylestats', function() {
-    gulp.src(dir_css + '*.css')
-    .pipe(plugins.stylestats());
-});
+gulp.task('stylestats', function () {
+  return gulp.src('')
+    .pipe(plugins.shell(
+      'stylestats "' + dir_css + 'minnow.css" -t html > stylestats.html'
+    ));
+})
 
 /**
  * Task: Doc Images
