@@ -45,9 +45,6 @@ $grid-name-small: "small" !default;
 
 @mixin row() {
     @include group;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 @mixin row-nested() {
@@ -84,7 +81,7 @@ $grid-name-small: "small" !default;
     @include row;
 
     // Nested Row
-    > .#{$ui-prefix}#{$grid-prefix-row} {
+    > .#{$ui-prefix}-#{$grid-prefix-row} {
         @include row-nested;
     }
 }

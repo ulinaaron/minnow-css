@@ -116,22 +116,6 @@ p {
     @include rem(margin-bottom, ms($base-font-size));
 }
 
-// Bold
-
-b,
-strong {
-    font-weight: bold;
-}
-
-// Italic
-
-em,
-i,
-q {
-    font-style: italic;
-    line-height: inherit;
-}
-
 code {
     @include rem(padding, 0 2px);
     color: $code-color;
