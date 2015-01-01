@@ -67,10 +67,6 @@ input[type="password"] {
     }
 }
 
-input[type="submit"] {
-    @extend .#{$ui-prefix}-button;
-}
-
 // Form Items
 //
 // Used to create spacing between rows, labels and inputs.
