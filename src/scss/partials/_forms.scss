@@ -67,6 +67,10 @@ input[type="password"] {
     }
 }
 
+input[type="submit"] {
+   @include button-style($color-primary);
+}
+
 // Form Items
 //
 // Used to create spacing between rows, labels and inputs.
