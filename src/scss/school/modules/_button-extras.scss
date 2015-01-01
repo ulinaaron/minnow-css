@@ -7,10 +7,13 @@
 // --------------------------------------------------
 
 $all-button-styles: (
-	primary: $color-primary,
-	secondary: $color-secondary,
-	tertiary: $color-tertiary,
-	success: $color-success,
+	( "primary", $color-primary ),
+	( "secondary", $color-secondary ),
+	( "tertiary", $color-tertiary ),
+	( "success", $color-success ),
+    ( "info", $color-info ),
+    ( "warning", $color-warning ),
+    ( "alert", $color-alert )
 );
 
 
@@ -41,8 +44,11 @@ $all-button-styles: (
     	@include button-outline;
     }
 
-    @each ($style, $color in list($all-button-styles)) {
-        &.outline.#{$style} {
+    @each $style in $all-button-styles {
+        $name: nth($style, 1);
+        $color: nth($style, 2);
+
+        &.outline.#{$name} {
             @include button-outline($color);
         }
     }
