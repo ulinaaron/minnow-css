@@ -553,7 +553,7 @@ code {
   padding: 0 2px;
   padding: 0 0.125rem;
   color: #bf616a;
-  border: 1px solid #dcaaaf;
+  border: 1px solid #dcaaae;
   background-color: #fdf9fa;
   white-space: nowrap;
   border-radius: 6px;
@@ -677,6 +677,12 @@ input[type="text"], input[type="password"] {
   padding: 0.625rem 1.01125rem;
   border-radius: 6px; }
 
+input[type="submit"] {
+  background-color: #8fa1b3;
+  color: #eff1f5; }
+  input[type="submit"]:hover {
+    background-color: #596e83; }
+
 .form-group {
   margin-bottom: 10px;
   margin-bottom: 0.625rem; }
@@ -755,28 +761,40 @@ form.mw-form-aligned .form-item {
 @media only screen and (max-width: 47.9375rem) {
   .small-1 {
     width: 8.33333%; }
+
   .small-2 {
     width: 16.66667%; }
+
   .small-3 {
     width: 25%; }
+
   .small-4 {
     width: 33.33333%; }
+
   .small-5 {
     width: 41.66667%; }
+
   .small-6 {
     width: 50%; }
+
   .small-7 {
     width: 58.33333%; }
+
   .small-8 {
     width: 66.66667%; }
+
   .small-9 {
     width: 75%; }
+
   .small-10 {
     width: 83.33333%; }
+
   .small-11 {
     width: 91.66667%; }
+
   .small-12 {
-    width: 100%; } }
+    width: 100%; }
+ }
 
 .mw-segment {
   padding: 10px;

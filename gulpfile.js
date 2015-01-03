@@ -71,9 +71,7 @@ gulp.task('src-styles', function () {
     .pipe(plugins.bless())
     .pipe(gulp.dest(dir_css))
     .pipe(reload({stream:true}))
-    .pipe(plugins.minifyCss({
-        keepSpecialComments: 1
-    }))
+    .pipe(plugins.csso())
     .pipe(plugins.rename({
         suffix: '.min'
     }))
@@ -95,7 +93,7 @@ gulp.task('doc-styles', function () {
     .pipe(plugins.bless())
     .pipe(gulp.dest(dir_docs_build_css))
     .pipe(reload({stream:true}))
-    .pipe(plugins.minifyCss({
+    .pipe(plugins.csso({
         keepSpecialComments: 1
     }))
     .pipe(plugins.rename({
