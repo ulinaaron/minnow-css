@@ -25,3 +25,5 @@ A feature-packed SCSS variable file that can be used for making global changes a
 ### So what's missing?
 
 In order to keep Minnow as tiny as possible lot of general "CSS Framework" features are not included. There are no Javascript/JQuery dependent modules. Variations for core modules are excluded but can easily be created by the extensive nature of the framework. There is plans to create extensive features in the future and include them as optional add-ons.
+
+
