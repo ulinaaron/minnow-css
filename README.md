@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/ulinaaron/minnow-css.svg?branch=develop)](https://travis-ci.org/ulinaaron/minnow-css)
+[![Stories in Ready](https://badge.waffle.io/ulinaaron/minnow-css.png?label=ready&title=Ready)]
+(http:/waffle.io/ulinaaron/minnow-css)
 
 # Minnow CSS
 
