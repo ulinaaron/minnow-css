@@ -64,7 +64,7 @@ var gulp = require('gulp'),
 
 gulp.task('src-styles', function () {
     return gulp.src([dir_scss + '*.scss', '!' + dir_scss + '_*.scss'])
-    .pipe(plugins.sass({
+    .pipe(plugins.rubySass({
         errLogToConsole: true
     }))
     .pipe(plugins.autoprefixer('last 2 versions','> 1%','ie 8'))
@@ -86,7 +86,7 @@ gulp.task('src-styles', function () {
 
 gulp.task('doc-styles', function () {
     return gulp.src([dir_docs_src_scss + '*.scss', '!' + dir_docs_src_scss + '_*.scss'])
-    .pipe(plugins.sass({
+    .pipe(plugins.rubySass({
         errLogToConsole: true
     }))
     .pipe(plugins.autoprefixer('last 2 versions', 'ie 9', 'ios 6', 'android 4'))
