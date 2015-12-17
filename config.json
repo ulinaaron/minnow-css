@@ -1,0 +1,36 @@
+{
+	"src": {
+		"scss": "src/scss/",
+		"scssVendor": "src/scss/vendor/",
+		"css": "src/css/"
+	},
+	"docs": {
+		"root": "docs/",
+		"src": {
+			"root": "docs/src/",
+			"assets": "assets/",
+			"scss": "assets/scss/",
+			"js": "assets/js/",
+			"jsStandalone": "assets/js/standalone/",
+			"jsPlugins": "assets/js/plugins/",
+			"img": "assets/img/"
+		},
+		"build": {
+			"root": "docs/build/",
+			"assets": "assets/",
+			"css": "assets/css",
+			"js": "assets/js/",
+			"img": "assets/img/"
+		}
+	},
+	"bower": "bower_components/",
+	"npm": "node_modules",
+	"jsCompiled": "main",
+	"devPort": 7280,
+	"autoprefixer": {
+		"browsers": [
+			"last 3 version",
+			"ie 9"
+		]
+	}
+}

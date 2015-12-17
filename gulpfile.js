@@ -1,60 +1,36 @@
 /**
  *
  * Minnow CSS
- *
- * Copyright (c) 2014 Aaron Mazade.
+ * 
+ * Author: Aaron <ulinaaron@gmail.com>
  *
  * MIT License
  *
  */
 
 /**
- * Setup
- * ========================
- */
-
-    // Source
-var dir_scss                    = 'src/scss/',
-    dir_scss_vendor             = 'src/scss/vendor/',
-    dir_css                     = 'src/css/',
-    // Docs Setup
-    dir_docs                    = 'docs/',
-    dir_docs_src                = 'docs/src/',
-    dir_docs_build              = 'docs/build/',
-    // Docs Source
-    dir_docs_src_assets         = 'docs/src/assets/',
-    dir_docs_src_scss           = 'docs/src/assets/scss/',
-    dir_docs_src_js             = 'docs/src/assets/js/',
-    dir_docs_src_js_standalone  = 'docs/src/assets/js/standalone/',
-    dir_docs_src_js_plug        = 'docs/src/assets/js/plugins/',
-    dir_docs_src_img            = 'docs/src/assets/img/',
-    // Docs Build
-    dir_docs_build_css          = 'docs/build/assets/css/',
-    dir_docs_build_js           = 'docs/build/assets/js/',
-    dir_docs_build_img          = 'docs/build/assets/img/',
-    // Misc
-    dir_bower                   = 'bower_components/',
-    dir_npm                     = 'node_modules/',
-    js_final                    = 'main', // JS final name of all the combined JS files
-    // Browser Sync Settings
-    dev_port                    = '7280',
-    dev_dir                     = dir_docs_build
-;
-
-/**
  * Initialize
  * ========================
  */
 
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    plugins = require('gulp-load-plugins')({
-        camelize: true
-    }),
-    merge = require('merge-stream'),
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload,
-    build = '';
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+var plugins = require('gulp-load-plugins')({
+    camelize: true
+});
+var config = require('./config.json');
+var merge = require('merge-stream');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var build = '';
+    
+/**
+ * Setup
+ * ========================
+ */
+
+var docsSrcPath = config.docs.src.root;
+var docsBuildPath = config.docs.build.root;
 
 /**
  * Task: Source Styles
@@ -63,19 +39,18 @@ var gulp = require('gulp'),
  */
 
 gulp.task('src-styles', function () {
-    return gulp.src([dir_scss + '*.scss', '!' + dir_scss + '_*.scss'])
+    return gulp.src([config.src.scss + '*.scss', '!' + config.src.scss + '_*.scss'])
     .pipe(plugins.sass({
         errLogToConsole: true
     }))
     .pipe(plugins.autoprefixer('last 2 versions','> 1%','ie 8'))
-    .pipe(plugins.bless())
-    .pipe(gulp.dest(dir_css))
+    .pipe(gulp.dest(config.src.css))
     .pipe(reload({stream:true}))
     .pipe(plugins.csso())
     .pipe(plugins.rename({
         suffix: '.min'
     }))
-    .pipe(gulp.dest(dir_css))
+    .pipe(gulp.dest(config.src.css))
     .pipe(reload({stream:true}));
 });
 
@@ -85,12 +60,11 @@ gulp.task('src-styles', function () {
  */
 
 gulp.task('doc-styles', function () {
-    return gulp.src([dir_docs_src_scss + '*.scss', '!' + dir_docs_src_scss + '_*.scss'])
+    return gulp.src([docsSrcPath + config.docs.src.scss + '*.scss', '!' + docsSrcPath + config.docs.src.scss + '_*.scss'])
     .pipe(plugins.sass({
         errLogToConsole: true
     }))
-    .pipe(plugins.autoprefixer('last 2 versions', 'ie 9', 'ios 6', 'android 4'))
-    .pipe(plugins.bless())
+    .pipe(plugins.autoprefixer(config.autoprefixer.browsers))
     .pipe(gulp.dest(dir_docs_build_css))
     .pipe(reload({stream:true}))
     .pipe(plugins.csso({
@@ -115,7 +89,7 @@ gulp.task('doc-styles', function () {
 gulp.task('stylestats', function () {
   return gulp.src('')
     .pipe(plugins.shell(
-      'stylestats "' + dir_css + 'minnow.css" -t html > stylestats.html'
+      'stylestats "' + config.src.css + 'minnow.css" -t html > stylestats.html'
     ));
 })
 
@@ -125,13 +99,13 @@ gulp.task('stylestats', function () {
  */
 
 gulp.task('doc-img', function () {
-    return gulp.src(dir_docs_src_img + '**/*')
+    return gulp.src(docsSrcPath + config.docs.src.img + '**/*')
     .pipe(plugins.cache(plugins.imagemin({
         optimizationLevel: 7,
         progressive: true,
         interlaced: true
     })))
-    .pipe(gulp.dest(dir_docs_build_img))
+    .pipe(gulp.dest(docsBuildPath + config.docs.build.img))
     .pipe(reload({stream:true, once:true}));
 });
 
@@ -171,9 +145,9 @@ gulp.task('bower-packages', function () {
     return merge(
 
         // Normalize
-        gulp.src([dir_bower + 'normalize.css/normalize.css'])
+        gulp.src([config.bower + 'normalize.css/normalize.css'])
         .pipe(plugins.rename('_base_normalize.scss'))
-        .pipe(gulp.dest(dir_scss_vendor)) // Copies to src/scss
+        .pipe(gulp.dest(config.src.scssVendor)) // Copies to src/scss
 
     );
 
@@ -181,7 +155,7 @@ gulp.task('bower-packages', function () {
 
 /**
  * Task: NPM Components
- * ================{pretty: true}
+ * ================
  * This is a manual process for components that should be included.
  * This function is not included in the default Gulp process.
  * Run 'gulp npm-packages' to use.
@@ -199,12 +173,12 @@ gulp.task('npm-packages', function () {
  */
 
 gulp.task('html', function() {
-    gulp.src([dir_docs_src + '**/*.html', '!' + dir_docs_src + '**/_*.html'])
+    gulp.src([docsSrcPath + '**/*.html', '!' + docsSrcPath + '**/_*.html'])
     .pipe(plugins.fileInclude({
         prefix: '@@',
         basepath: '@file'
     }))
-    .pipe(gulp.dest(dir_docs_build))
+    .pipe(gulp.dest(docsBuildPath))
     .pipe(reload({stream:true}));
 });
 
@@ -218,16 +192,16 @@ gulp.task('watch', function() {
 
     browserSync.init({
         server: {
-            baseDir: dev_dir
+            baseDir: docsBuildPath
         },
         open: false,
-        port: dev_port
+        port: config.devPort
     });
 
-    gulp.watch(dir_scss + '**/*.scss', ['src-styles', 'doc-styles']);
-    gulp.watch(dir_docs_src_scss + '**/*.scss', ['doc-styles']);
-    gulp.watch([dir_docs_src_img + '**/*', dir_docs_build_img + '**/*'], ['doc-img']);
-    gulp.watch(dir_docs_src + '**/*.html', ['html']);
+    gulp.watch(config.scss + '**/*.scss', ['src-styles', 'doc-styles']);
+    gulp.watch(docsSrcPath + config.docs.src.scss + '**/*.scss', ['doc-styles']);
+    gulp.watch([docsSrcPath + config.docs.src.img + '**/*', docsSrcPath + config.docs.build.img + '**/*'], ['doc-img']);
+    gulp.watch(docsSrcPath +  '**/*.html', ['html']);
 });
 
 /**
@@ -237,7 +211,7 @@ gulp.task('watch', function() {
  */
 
 gulp.task('deploy', function() {
-    gulp.src(dir_docs_build + '**/*')
+    gulp.src(docsBuildPath + '**/*')
     .pipe(plugins.ghPages());
 });
 
