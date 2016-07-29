@@ -57,17 +57,6 @@ $link-transitions: true !default;
 // MIXINS
 // --------------------------------------------------
 
-// Group
-//
-// This is used to clear floats.
-// Commonly known as a clearfix.
-
-@mixin group {
-  *zoom:1;
-  &:before, &:after { content: " "; display: table; }
-  &:after { clear: both; }
-}
-
 // Box Sizing
 //
 // Used to properly control widths of elements
@@ -151,8 +140,9 @@ body {
 
 // Group / Clearfix
 
-.group {
-  @include group;
+.group,
+.clearfix {
+  @include clearfix;
 }
 
 // Global Box Sizing

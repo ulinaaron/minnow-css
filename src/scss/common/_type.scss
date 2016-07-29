@@ -62,47 +62,22 @@ h6 {
     line-height: 1;
 }
 
-h1,
-.font-size-huge {
-    @include rem(font-size, $font-size-huge);
-}
+h1 { @include rem(font-size, $font-size-huge); }
+h2 { @include rem(font-size, $font-size-xxxl); }
+h3 { @include rem(font-size, $font-size-xxl); }
+h4 { @include rem(font-size, $font-size-xl); }
+h5 { @include rem(font-size, $font-size-large); }
+h6 { @include rem(font-size, $font-size-medium); }
 
-h2,
-.font-size-xxxl {
-    @include rem(font-size, $font-size-xxxl);
-}
-
-h3,
-.font-size-xxl {
-    @include rem(font-size, $font-size-xxl);
-}
-
-h4,
-.font-size-xl {
-    @include rem(font-size, $font-size-xl);
-}
-
-h5,
-.font-size-large {
-    @include rem(font-size, $font-size-large);
-}
-
-h6,
-.font-size-medium {
-    @include rem(font-size, $font-size-medium);
-}
-
-.font-size-small {
-    @include rem(font-size, $font-size-small);
-}
-
-.font-size-tiny {
-    @include rem(font-size, $font-size-tiny);
-}
-
-.font-size-micro {
-    @include rem(font-size, $font-size-micro);
-}
+.font-size-huge { @include rem(font-size, $font-size-huge); }
+.font-size-xxxl { @include rem(font-size, $font-size-xxxl); }
+.font-size-xxl { @include rem(font-size, $font-size-xxl); }
+.font-size-xl { @include rem(font-size, $font-size-xl); }
+.font-size-large { @include rem(font-size, $font-size-large); }
+.font-size-medium {@include rem(font-size, $font-size-medium); }
+.font-size-small { @include rem(font-size, $font-size-small); }
+.font-size-tiny { @include rem(font-size, $font-size-tiny); }
+.font-size-micro { @include rem(font-size, $font-size-micro); }
 
 .subheader {
     font-weight: 300;
@@ -188,8 +163,7 @@ ol {
 // Unstyled List
 
 ul.plain, ol.plain {
-    padding: 0;
-    list-style-type: none;
+    @include list-unstyled;
 }
 
 // Inline List
